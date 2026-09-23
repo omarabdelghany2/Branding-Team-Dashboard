@@ -212,16 +212,25 @@ function renderSocialLegend() {
     </div>`;
 }
 
+// Two field families coexist in social.json: the original endFollowers /
+// netFollowerGrowth / avgVideoViews, and the Phase-2 followers / followerGrowth /
+// views that import_social_csv.py writes. Read BOTH through these accessors —
+// the KPI row previously used endFollowers alone and silently dropped every
+// CSV-imported account from the headline total.
+const fol = (a) => a.followers ?? a.endFollowers;
+const gro = (a) => a.followerGrowth ?? a.netFollowerGrowth;
+const views = (a) => a.views ?? a.avgVideoViews;
+
 function renderSectionB() {
   renderSocialLegend();
   const accounts = (state.latest.social.accounts || []).filter((a) => marketOK(a.country));
   const known = (state.config.socialAccounts.accounts || []).length;
 
   // KPIs
-  const withData = accounts.filter((a) => a.endFollowers != null);
-  const totalFollowers = withData.reduce((s, a) => s + Number(a.endFollowers), 0);
-  const anyGrowth = accounts.some((a) => a.netFollowerGrowth != null);
-  const totalGrowth = accounts.reduce((s, a) => s + (Number(a.netFollowerGrowth) || 0), 0);
+  const withData = accounts.filter((a) => fol(a) != null);
+  const totalFollowers = withData.reduce((s, a) => s + Number(fol(a)), 0);
+  const anyGrowth = accounts.some((a) => gro(a) != null);
+  const totalGrowth = accounts.reduce((s, a) => s + (Number(gro(a)) || 0), 0);
   const pending = (accounts.length || known) - withData.length;
   $("social-kpis").innerHTML = `
     <div class="kpi"><div class="k-label">Public followers tracked</div>
@@ -234,9 +243,6 @@ function renderSectionB() {
       <div class="k-value">${pending}</div>
       <div class="k-sub">${gapBadge("need API key / backend / export")}</div></div>`;
 
-  const fol = (a) => a.followers ?? a.endFollowers;
-  const gro = (a) => a.followerGrowth ?? a.netFollowerGrowth;
-  const views = (a) => a.views ?? a.avgVideoViews;
   const srcTag = (a) => a.source ? `<span class="tag tag-note mini">${esc((a.source + "").split(" ")[0])}</span>`
     : (fol(a) != null ? `<span class="tag tag-ok mini">public</span>` : gapBadge("pending"));
   $("social-wrap").outerHTML = `<div id="social-wrap">${
