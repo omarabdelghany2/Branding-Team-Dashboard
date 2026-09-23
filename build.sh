@@ -15,6 +15,11 @@ cp index.html public/
 cp -r assets public/
 cp -r data   public/
 
+# GitHub Pages runs Jekyll over the output unless told not to, which silently
+# drops files and folders beginning with "_" or ".". Nothing here should be
+# transformed — it is already the finished site.
+touch public/.nojekyll
+
 # Keep the board out of search results. It is an internal board on a public
 # URL, so obscurity is the only access control there is — do not make it
 # searchable on top of that.

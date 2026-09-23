@@ -1,0 +1,59 @@
+# Publishes the dashboard to GitHub Pages on every push to main.
+#
+# Same contract as the Render setup: build.sh assembles ./public with only
+# index.html, assets/ and data/, and that directory is what gets served. The
+# collection scripts and any local notes are never published.
+#
+# Weekly routine is unchanged:  commit data/  →  git push  →  live in ~1 min.
+name: Deploy dashboard
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:      # lets you redeploy by hand from the Actions tab
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Never let two deploys race; queue them instead of cancelling, so a data push
+# is not dropped by a later one.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Build public/
+        run: sh ./build.sh
+
+      - name: Fail if anything sensitive reached the build
+        run: |
+          if find public -iname '*password*' -o -iname '*credential*' \
+                         -o -iname '*secret*' -o -name '*.py' | grep -q .; then
+            echo "::error::Sensitive or non-dashboard files found in public/ — refusing to publish"
+            find public -iname '*password*' -o -iname '*credential*' \
+                        -o -iname '*secret*' -o -name '*.py'
+            exit 1
+          fi
+          echo "public/ is clean: $(find public -type f | wc -l) files"
+
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
