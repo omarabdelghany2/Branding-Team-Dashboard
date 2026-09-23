@@ -1,0 +1,444 @@
+{
+  "meta": {
+    "version": "0.1.0-mvp",
+    "title": "51Talk ME Brand Weekly Monitoring Dashboard / 中东品牌周会监测看板",
+    "owner": "Omar Abdelghany",
+    "team": "middle-east / Brand",
+    "cadence": "Collect Mon → finalize Tue → present at Wed weekly meeting",
+    "generatedBy": "MVP scaffold — grounded in social-listening-dashboard-brief.md",
+    "lastUpdated": "2026-09-23"
+  },
+  "markets": [
+    {
+      "code": "KSA",
+      "name": "Saudi Arabia",
+      "nameZh": "沙特",
+      "storeCountry": "sa"
+    },
+    {
+      "code": "KWT",
+      "name": "Kuwait",
+      "nameZh": "科威特",
+      "storeCountry": "kw"
+    },
+    {
+      "code": "UAE",
+      "name": "United Arab Emirates",
+      "nameZh": "阿联酋",
+      "storeCountry": "ae"
+    }
+  ],
+  "brand": {
+    "name": "51Talk",
+    "keywords": {
+      "status": "draft — Trends-verified 2026-09-22, still pending Patrick's official sign-off",
+      "note": "Verified against Google Trends 2026-09-22 (today 12-m, per market). '٢٥١ توك' was a TYPO — ٢٥١ is 251, not 51 — and returns no data in any market; removed. 'فايف ون توك' (the phonetic Arabic form used in the accounts' own bios and in user reviews) is a REAL signal in KSA and was missing entirely. Patrick still owns the official list.",
+      "en": [
+        "51Talk",
+        "51 Talk",
+        "51talk",
+        "51Talk English",
+        "51talk kids"
+      ],
+      "ar": [
+        "فايف ون توك",
+        "51 توك"
+      ],
+      "products": [],
+      "removed": [
+        {
+          "term": "٢٥١ توك",
+          "reason": "typo for 51 (٢٥١=251); no Trends data in SA/KW/AE on 2026-09-22"
+        }
+      ],
+      "trendsVerified": {
+        "capturedAt": "2026-09-22",
+        "timeframe": "today 12-m",
+        "51Talk": {
+          "KSA": "strong (mean 49.8)",
+          "KWT": "sparse (mean 1.9, spiky)",
+          "UAE": "sparse (mean 3.1, spiky)"
+        },
+        "فايف ون توك": {
+          "KSA": "strong (mean 31.5)",
+          "KWT": "no data",
+          "UAE": "no data"
+        },
+        "51 توك": {
+          "KSA": "marginal (mean 1.9)",
+          "KWT": "no data",
+          "UAE": "no data"
+        },
+        "note": "Trends normalises within a request, so figures are comparable ACROSS keywords only when fetched in ONE payload, and never across snapshots."
+      },
+      "trendsKeywords": [
+        "51Talk",
+        "فايف ون توك"
+      ]
+    },
+    "apps": {
+      "status": "tracking-flagship+adults (pending Patrick final confirm)",
+      "note": "Seller HELLOWORLD ONLINE EDUCATION = Hawo/51Talk. Tracking BOTH the flagship English app and the Arabic Adults app. Android packages resolved via Google Play search.",
+      "seller": "HELLOWORLD ONLINE EDUCATION",
+      "ios": {
+        "tracked": [
+          {
+            "appId": "1585144932",
+            "label": "51Talk (English)"
+          },
+          {
+            "appId": "6741898680",
+            "label": "51Talk Adults (Arabic)"
+          }
+        ]
+      },
+      "android": {
+        "note": "Google Play aggregate rating/ratings count is largely GLOBAL (not per-storefront). Use Google Play mainly for reviews/sentiment (which ARE per-country/lang) — treat per-market GP rating comparison with caution.",
+        "tracked": [
+          {
+            "packageName": "com.talk51.international",
+            "label": "51Talk (English)"
+          },
+          {
+            "packageName": "com.talk51.global.adult",
+            "label": "51Talk Adults (Arabic)"
+          }
+        ]
+      }
+    }
+  },
+  "competitors": {
+    "status": "pending-patrick-confirmation",
+    "note": "Per brief §2 & §7: the official competitor list MUST be confirmed by Patrick. Candidates below are NOT official and must not be reported as competitors until confirmed.",
+    "confirmed": [],
+    "candidates": [
+      {
+        "name": "Fahim",
+        "source": "Mentioned in 2026-08-26 weekly meeting (Shadan's UX research: no teacher list, flexible hours, high unit price)",
+        "status": "candidate-unconfirmed",
+        "keywords": {
+          "en": [],
+          "ar": []
+        }
+      }
+    ]
+  },
+  "socialAccounts": {
+    "status": "accounts verified against live platforms 2026-09-23 — 9/11 have follower data; all are regional (no KWT/UAE-specific handles exist); 1 handle not found (TikTok @51talkad), 1 page unavailable (Facebook 51TalkAR).",
+    "note": "Source: Norah's account sheet (2026-09-03). ONLY public handles/links stored here — NO passwords (credentials are held separately by Norah). Accounts appear to be MENA/KSA-regional, not separate per KWT/UAE — confirm whether Kuwait/UAE have their own handles. Some accounts have login issues per Norah's notes.",
+    "platforms": [
+      "TikTok",
+      "Instagram",
+      "YouTube",
+      "X",
+      "Snapchat",
+      "Facebook",
+      "Threads",
+      "Pinterest"
+    ],
+    "accounts": [
+      {
+        "country": "KSA",
+        "platform": "TikTok",
+        "accountName": "@51talk.ksa",
+        "accountUrl": "https://www.tiktok.com/@51talk.ksa",
+        "accountType": "brand-main"
+      },
+      {
+        "country": "KSA",
+        "platform": "Instagram",
+        "accountName": "51talkksa",
+        "accountUrl": "https://www.instagram.com/51talkksa/",
+        "accountType": "brand-main"
+      },
+      {
+        "country": "KSA",
+        "platform": "YouTube",
+        "accountName": "@51Talk_ksa",
+        "accountUrl": "https://www.youtube.com/@51Talk_ksa",
+        "channelId": "UCQhwrEa873XLGyzmlV2vWtw",
+        "accountType": "brand-main",
+        "note": "channelId resolved via API from handle (sheet's channel-ID link was stale)"
+      },
+      {
+        "country": "KSA",
+        "platform": "X",
+        "accountName": "@51talk_ksa",
+        "accountUrl": "https://x.com/51talk_ksa",
+        "accountType": "brand-main"
+      },
+      {
+        "country": "KSA",
+        "platform": "Snapchat",
+        "accountName": "Mena_51talk",
+        "accountUrl": "https://www.snapchat.com/add/mena_51talk",
+        "accountType": "brand-main",
+        "note": "URL constructed from handle — verify; Snapchat has ~no public data"
+      },
+      {
+        "country": "KSA",
+        "platform": "Facebook",
+        "accountName": "51TalkAR",
+        "accountUrl": "https://www.facebook.com/51TalkAR/",
+        "accountType": "brand-secondary",
+        "note": "Page not publicly viewable (2026-09-22): \"This content isn't available at the moment\". Global-managed; needs Meta Business access.",
+        "status": "unavailable"
+      },
+      {
+        "country": "KSA",
+        "platform": "Threads",
+        "accountName": "51talkksa",
+        "accountUrl": "https://www.threads.net/@51talkksa",
+        "accountType": "brand-secondary",
+        "note": "URL constructed; same identity as Instagram"
+      },
+      {
+        "country": "KSA",
+        "platform": "Pinterest",
+        "accountName": "51talk_ar",
+        "accountUrl": "https://www.pinterest.com/51talk_ar/",
+        "accountType": "brand-secondary"
+      },
+      {
+        "country": "KSA",
+        "platform": "TikTok",
+        "accountName": "@51talkad",
+        "accountUrl": "https://www.tiktok.com/@51talkad",
+        "accountType": "adult-app",
+        "note": "TikTok returns \"Couldn't find this account\" (2026-09-22). Previously recorded as 'login-gated per Norah' — that was wrong. Norah to supply the correct handle or retire this row.",
+        "status": "not-found"
+      },
+      {
+        "country": "KSA",
+        "platform": "Instagram",
+        "accountName": "51talk_ad",
+        "accountUrl": "https://www.instagram.com/51talk_ad/",
+        "accountType": "adult-app",
+        "note": "Adults app; login after approval per Norah"
+      },
+      {
+        "country": "KSA",
+        "platform": "TikTok",
+        "accountName": "learn.with.max1",
+        "accountUrl": "https://www.tiktok.com/@learn.with.max1",
+        "accountType": "creator",
+        "note": "Separate creator/KOL account"
+      }
+    ],
+    "metricCapability": {
+      "note": "Norah's Phase-2 metric set. access: auto=public/derived, creds=needs API key/OAuth or Hootsuite/Buffer export. source tags the likely origin.",
+      "followers": {
+        "access": "auto",
+        "source": "public / API"
+      },
+      "followerGrowth": {
+        "access": "auto",
+        "source": "derived (WoW / MoM)"
+      },
+      "posts": {
+        "access": "auto",
+        "source": "public / API"
+      },
+      "views": {
+        "access": "auto",
+        "source": "public / API"
+      },
+      "likes": {
+        "access": "auto",
+        "source": "public / API"
+      },
+      "comments": {
+        "access": "auto",
+        "source": "public / API"
+      },
+      "shares": {
+        "access": "creds",
+        "source": "API / Hootsuite-Buffer export"
+      },
+      "impressions": {
+        "access": "creds",
+        "source": "Hootsuite/Buffer export or platform API"
+      },
+      "reach": {
+        "access": "creds",
+        "source": "Hootsuite/Buffer export or platform API"
+      },
+      "engagement": {
+        "access": "creds",
+        "source": "API / Hootsuite-Buffer export"
+      },
+      "engagementRate": {
+        "access": "creds",
+        "source": "derived (engagement / impressions)"
+      }
+    },
+    "phase2": {
+      "note": "Norah's request (2026-09-07): TikTok/X/Snapchat/YouTube/Instagram × followers,likes,impressions,engagement,views,reach,comments,shares,growth; weekly + monthly. Decision: HYBRID sources; X DEFERRED (paid API).",
+      "comparison": [
+        "weekly",
+        "monthly"
+      ],
+      "dataSources": {
+        "public": "scrapers (followers/subs where visible)",
+        "api": {
+          "youtube": "free API key (subs + video views)",
+          "meta": "Graph API for IG/FB (Business acct + token)",
+          "tiktok": "Business API (approval)"
+        },
+        "tool": {
+          "hootsuite": "analytics export → canonical CSV",
+          "buffer": "analytics export → canonical CSV"
+        }
+      },
+      "canonicalCsvColumns": [
+        "platform",
+        "account",
+        "followers",
+        "posts",
+        "views",
+        "likes",
+        "comments",
+        "shares",
+        "impressions",
+        "reach",
+        "engagement"
+      ],
+      "deferred": [
+        "X deep metrics (impressions/engagement) — paid API. Follower + post count no longer blocked (browser-capture)."
+      ]
+    },
+    "platformCapability": {
+      "TikTok": {
+        "publicScrape": false,
+        "browserCapture": true,
+        "needsCredentials": true,
+        "note": "Server-side scrape BLOCKED (confirmed 2026-09-03). browser-capture verified 2026-09-22 (public profile, no login): followers + lifetime likes readable, ROUNDED to 3 significant figures (226K = ±500). Impressions/reach/eng-rate still need the backend."
+      },
+      "Instagram": {
+        "publicScrape": false,
+        "browserCapture": true,
+        "needsCredentials": true,
+        "note": "Server-side scrape blocked. browser-capture verified 2026-09-22 (public profile, no login): followers + lifetime post count readable from the page/meta description, ROUNDED. Exact figures + insights need Meta Graph API on a Business/Creator account."
+      },
+      "YouTube": {
+        "publicScrape": true,
+        "browserCapture": true,
+        "apiKeyRecommended": true,
+        "note": "Free Data API key works and is in use — EXACT subs + per-video views. Impressions/eng-rate need YouTube Studio."
+      },
+      "X": {
+        "publicScrape": false,
+        "browserCapture": true,
+        "needsCredentials": false,
+        "deferred": false,
+        "note": "RECLASSIFIED 2026-09-22 — previously deferred as 'paid API only'. browser-capture verified 2026-09-22 (public profile, no login): follower count + post count ARE readable without the paid API (ROUNDED, 16.9K = ±50). Only deep metrics (impressions/engagement) need the paid tier."
+      },
+      "Threads": {
+        "publicScrape": false,
+        "browserCapture": true,
+        "needsCredentials": true,
+        "note": "No official API. browser-capture verified 2026-09-22 (public profile, no login): followers readable and EXACT (7,713) plus thread count — the most precise of the Meta properties."
+      },
+      "Snapchat": {
+        "publicScrape": true,
+        "browserCapture": true,
+        "needsCredentials": true,
+        "note": "Public subscriber count readable server-side and exact. All other metrics need the backend/export."
+      },
+      "Pinterest": {
+        "publicScrape": true,
+        "browserCapture": true,
+        "needsCredentials": true,
+        "note": "Public follower count readable (currently 0). Deep metrics need a Pinterest API app."
+      },
+      "Facebook": {
+        "publicScrape": false,
+        "browserCapture": false,
+        "needsCredentials": true,
+        "note": "BLOCKED 2026-09-22: the page returns \"This content isn't available at the moment\" — restricted, unpublished or deleted. Not a scraping limitation. Needs Meta Business access to diagnose."
+      }
+    },
+    "collectionMethods": {
+      "note": "Three ways data reaches a snapshot. Browser-capture was added 2026-09-22 and is what unblocked TikTok/Instagram/X/Threads.",
+      "server": "stdlib fetchers — fetch_appstore / fetch_googleplay / fetch_google_trends / fetch_social_public / fetch_youtube.",
+      "browserCapture": "Read the PUBLIC profile in a real browser, then record via: python scripts/import_social_csv.py --date <d> --csv <file> --source 'browser-capture (public profile, <d>)'. Most public counts are ROUNDED — record followersPrecision so WoW growth below that granularity is never over-read.",
+      "export": "Hootsuite/Buffer analytics export → canonical CSV → import_social_csv.py. Still the ONLY route to impressions/reach/shares/engagement."
+    },
+    "marketCoverage": {
+      "status": "verified-2026-09-23",
+      "finding": "No Kuwait- or UAE-specific social accounts exist. Probed and confirmed absent: instagram.com/51talkkw, instagram.com/51talkuae, tiktok.com/@51talk.kw. Web search surfaced no regional handles either.",
+      "consequence": "All 11 accounts are KSA-branded but serve the whole MENA region. Section B therefore has no Kuwait/UAE breakdown — that is a real structural fact, not a collection gap. Sections A and C DO have per-market data (App Store, Google Play, Trends).",
+      "doNot": "Never attribute regional follower counts to a single market (brief §5).",
+      "decision": "Norah/Patrick: is one regional account set intentional, or should KWT/UAE get their own?"
+    }
+  },
+  "credentials": {
+    "note": "Secrets are read from scripts/secrets.local.json (kept on your machine, never committed). Copy secrets.local.json.example and fill what you have.",
+    "youtubeApiKey": {
+      "have": false,
+      "access": "creds",
+      "for": "YouTube subs + video views (free key)"
+    },
+    "youtubeStudio": {
+      "have": false,
+      "access": "creds",
+      "for": "YouTube deep metrics (impressions, eng-rate)"
+    },
+    "tiktokExport": {
+      "have": false,
+      "access": "creds",
+      "for": "TikTok backend metrics (impressions, reach, eng-rate)"
+    },
+    "snapchatExport": {
+      "have": false,
+      "access": "creds",
+      "for": "Snapchat — all metrics (no public data)"
+    },
+    "metaAccess": {
+      "have": false,
+      "access": "creds",
+      "for": "Facebook/Instagram insights (only if Patrick adds them)"
+    },
+    "asoTool": {
+      "have": false,
+      "access": "creds",
+      "for": "App Store keyword rank (paid ASO tool)"
+    }
+  },
+  "definitions": {
+    "exposure": {
+      "status": "pending-confirmation",
+      "chosen": null,
+      "options": [
+        "impressions",
+        "reach",
+        "video_views"
+      ],
+      "note": "Brief §7: pick ONE consistent meaning for “曝光量 / exposure” and use it everywhere."
+    },
+    "tiktokAvgViews": {
+      "status": "pending-confirmation",
+      "window": null,
+      "sampleSize": null,
+      "includeLive": null,
+      "note": "Brief §3B/§7: define window, sample range, and whether livestreams count. Never represent the average with a single viral video."
+    },
+    "collection": {
+      "appStore": {
+        "method": null,
+        "acceptableLatencyDays": null,
+        "baselineWeek": "2026-W35",
+        "note": "Confirm scrape/API method + acceptable latency + historical baseline start week."
+      }
+    }
+  },
+  "rules": [
+    "Every metric must carry a collection period + capture date.",
+    "Raw platform data first; any estimate must be labelled as an estimate.",
+    "Google Trends is a RELATIVE index — never state it as absolute search volume.",
+    "Never sum across different markets/platforms/account types unless the definition is identical.",
+    "Present follower growth, exposure, views and engagement rate separately — no metric substitutes for another.",
+    "Never fabricate competitors, owners, amounts, deadlines or data to fill the board — mark gaps explicitly.",
+    "For any anomaly, re-check the collection method first, then give a business explanation (verified vs hypothesis)."
+  ]
+}

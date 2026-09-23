@@ -1,0 +1,26 @@
+{
+  "conclusions": [
+    { "text": "W36 first real data — now tracking BOTH apps (51Talk English + 51Talk Adults/Arabic) across App Store + Google Play in all 3 markets: 12 rating cells + Google Trends + cross-market reviews.", "watch": "coverage" },
+    { "text": "Ratings are solid but uneven. The Arabic 'Adults' app rates higher everywhere (App Store 4.6–4.9). The flagship English app is strong on App Store (KSA 4.31★, 14.0k ratings) but weaker on Google Play — especially KSA at 3.70. Android/English in KSA is the weakest cell and deserves a review-theme deep-dive.", "watch": "quality" },
+    { "text": "KSA/UAE sentiment blind spot is solved: Apple's public feed returns no KSA/UAE reviews, but Google Play + the Adults app now give us reviews in all three markets. Early read is mostly positive, with a UAE payment complaint ('لم ادخل كلها بفلوس' ≈ couldn't get in, it's all paid) worth noting.", "watch": "sentiment" },
+    { "text": "Google Trends (RELATIVE index; keyword '51Talk'): KSA highest (~20, softening), UAE ~14, Kuwait ~0 — directional only.", "watch": "voice" },
+    { "text": "Owned social (Section B) now has first partial public data: Snapchat is by far the largest owned channel (~89.9K subscribers), YouTube ~2.08K, Pinterest ~0. 8 of 11 accounts (TikTok/Instagram/X/Facebook/Threads) can't be read publicly — pending platform access/keys (next stage).", "watch": "social" },
+    { "text": "Still blocking: competitor list (Patrick); backend social access/keys for engagement metrics (Norah); and confirming whether Kuwait/UAE have their own accounts (they look MENA-regional).", "watch": "unblock" }
+  ],
+  "changeExplanation": {
+    "verified": [
+      { "observation": "Both apps × both stores × 3 markets + Trends captured live on 2026-09-03.", "cause": "Apple public API + google-play-scraper + Google Trends pulled successfully; no market/app gaps." },
+      { "observation": "KSA & UAE reviews are now available.", "cause": "Google Play (and the Adults app on App Store) return per-country reviews where Apple's flagship RSS feed returned zero for SA/AE — verified." }
+    ],
+    "hypotheses": [
+      { "observation": "Flagship English app rates lower on Google Play than App Store, especially KSA (3.70 vs 4.31).", "hypothesis": "Possible Android-specific friction (device/performance/payment) or a different user mix. Needs review-theme analysis to confirm — not a fact yet." },
+      { "observation": "Adults (Arabic) app rates higher than the flagship in every market.", "hypothesis": "May reflect a smaller, self-selected paying base rather than a genuinely better experience — not a like-for-like comparison." }
+    ]
+  },
+  "risks": [
+    { "problem": "KSA English/Android satisfaction (Google Play 3.70) trails other cells in the anchor market", "impact": "Potential reputation/retention drag where volume is highest (ROI-relevant)", "probability": "medium", "owner": "待确认 (Omar to theme-analyze)", "nextStep": "Classify KSA Google Play reviews by theme; if a systemic issue, flag to product", "deadline": "2026-W37" },
+    { "problem": "Payment/onboarding complaints appearing (Kuwait 'first lesson free', UAE 'all paid')", "impact": "Possible friction in the trial → paid step", "probability": "low-medium (small sample)", "owner": "待确认", "nextStep": "Watch and quantify next week across both stores", "deadline": "2026-W37" },
+    { "problem": "Competitor list + official social accounts still pending", "impact": "Section A competitor comparison blocked; Section B (social) empty", "probability": "high", "owner": "Patrick / Norah", "nextStep": "Lock competitor list (Patrick) + get account list (Norah) before W37 collection", "deadline": "before 2026-W37" }
+  ],
+  "notes": "W36 = first real data. WoW vs last snapshot is null (baseline W35 had no A/C data); clean week-over-week starts W37. Everything ties back to growth/ROI (brief §8)."
+}

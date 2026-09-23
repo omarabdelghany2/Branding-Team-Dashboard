@@ -1,0 +1,13 @@
+{
+  "captureDate": "2026-08-29",
+  "weekLabel": "2026-W35",
+  "collectionPeriod": { "start": "2026-08-23", "end": "2026-08-29" },
+  "isBaseline": true,
+  "dataQuality": [
+    { "issue": "Official competitor list not yet confirmed by Patrick", "impact": "Section A competitor comparison is blocked/empty", "status": "open", "owner": "Patrick" },
+    { "issue": "Official social accounts (per market/platform) not confirmed with Fei", "impact": "Section B has no accounts to track yet", "status": "open", "owner": "Fei / Omar" },
+    { "issue": "iOS/Android app IDs not confirmed", "impact": "Section A App Store metrics + Section C reviews cannot be auto-collected", "status": "open", "owner": "Omar / Patrick" },
+    { "issue": "“Exposure” definition + TikTok avg-views method not defined", "impact": "Section B exposure & avg-view KPIs left blank to avoid mixing definitions", "status": "open", "owner": "Patrick / Fei" },
+    { "issue": "This is the baseline week (W35) — no prior snapshot", "impact": "WoW and 4-week trends will populate from next week onward", "status": "expected", "owner": "n/a" }
+  ]
+}

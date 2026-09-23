@@ -1,0 +1,105 @@
+{
+  "conclusions": [
+    {
+      "text": "Our owned social footprint is 6x bigger than the board has been showing. Browser-based collection unblocked TikTok, Instagram, X and Threads, taking tracked followers from ~94,700 to 599,351 across 9 of 11 accounts. TikTok @51talk.ksa (226.2K) and Instagram 51talkksa (226,386) are our two largest channels and had been completely absent from every previous week's report.",
+      "watch": "social"
+    },
+    {
+      "text": "Brand search interest in KSA is recovering after a three-week dip: 51 this week vs 43 last week, with the Arabic term 'فايف ون توك' moving the same way (32 vs 18). Two independent keywords rising together is a more reliable signal than either alone.",
+      "watch": "voice"
+    },
+    {
+      "text": "Kuwait and UAE registered their first measurable search activity in months (week of 2026-09-13). Treat this as a flag, not a result: both markets sit at a near-zero baseline, so a handful of searches reads as 100 on a relative index. Worth watching for 2-3 weeks before drawing any conclusion.",
+      "watch": "voice"
+    },
+    {
+      "text": "Store health is steady with no risk signals. App Store ratings moved less than 0.02 across both apps and all 3 markets, while review volume kept building (KSA English +430 ratings). Snapchat added +2,000 followers and YouTube +120. Nothing is on fire.",
+      "watch": "reviews"
+    },
+    {
+      "text": "The binding constraint is no longer collection - it is access and decisions. Impressions, reach and engagement are still null for every account (needs the Hootsuite export), the competitor list is still unconfirmed, and two accounts in our own roster are broken: TikTok @51talkad does not exist and the Facebook page is not publicly viewable.",
+      "watch": "unblock"
+    },
+    {
+      "text": "Kuwait and UAE have no social accounts of their own — confirmed against the live platforms, not assumed. All 11 accounts are KSA-branded and serve the whole region, so Section B has no KWT/UAE split and their followers cannot be claimed for a single market. Worth a decision: is one regional account set intentional, or should Kuwait and UAE get their own?",
+      "watch": "social"
+    }
+  ],
+  "changeExplanation": {
+    "verified": [
+      {
+        "observation": "Section B jumped from 3 to 9 accounts with data and from ~94,700 to 598,728 followers.",
+        "cause": "Method change, not audience growth. TikTok/Instagram/X/Threads block server-side requests but serve public profiles to a real browser. NOT a week-over-week gain - these accounts simply had no prior measurement."
+      },
+      {
+        "observation": "Kuwait and UAE Google Trends went from 'no data' to a readable series.",
+        "cause": "Timeframe changed from daily to native-weekly ('today 12-m'). Daily points round to 0 in low-volume markets; weekly buckets aggregate them into a visible signal. A collection fix, not a change in real interest."
+      },
+      {
+        "observation": "Arabic-language search interest appeared for the first time.",
+        "cause": "config's Arabic keyword '٢٥١ توك' was a typo (٢٥١ = 251, not 51) and matched nothing. Replaced with 'فايف ون توك', the form used in our own account bios and in user reviews."
+      },
+      {
+        "observation": "YouTube average video views previously reported as 24,967, now 996.",
+        "cause": "The old figure averaged a window containing one 355,574-view video, 61x the next highest. Both collectors now share a 10-upload window and report the median. The channel's typical video gets ~1,000 views, not ~25,000."
+      },
+      {
+        "observation": "Instagram and Threads follower counts changed from rounded to exact.",
+        "cause": "Both expose the precise figure in the page markup even though they display a rounded one. A measurement improvement, not audience movement — do not read 226K→226,386 as growth."
+      }
+    ],
+    "hypotheses": [
+      {
+        "observation": "KSA search interest dipped weeks of 2026-08-30 / 09-06 and is now recovering.",
+        "hypothesis": "Consistent with a back-to-school cycle in KSA, but we have no campaign calendar or spend data linked to these weeks to confirm it. Needs the media plan overlaid before anyone claims a cause."
+      },
+      {
+        "observation": "Kuwait and UAE both spiked in the same week (2026-09-13).",
+        "hypothesis": "Two markets moving together in one week suggests a shared driver - a regional campaign, PR, or app-store feature - rather than organic noise. Unverified: check whether any paid activity ran in that week."
+      }
+    ]
+  },
+  "risks": [
+    {
+      "problem": "Impressions / reach / engagement unavailable for all 11 accounts",
+      "impact": "Section B cannot show content performance or engagement rate, so social results still cannot be tied to the funnel - the exact link Patrick asks for",
+      "probability": "high",
+      "owner": "Norah",
+      "nextStep": "Complete the Hootsuite 2FA login and export one week of analytics; it is the only route to these metrics",
+      "deadline": "before 2026-W40"
+    },
+    {
+      "problem": "TikTok @51talkad does not exist and Facebook 51TalkAR is not publicly viewable",
+      "impact": "Our own account roster is wrong, not merely inaccessible - we may be reporting on a channel that was retired",
+      "probability": "high",
+      "owner": "Norah",
+      "nextStep": "Confirm the correct TikTok handle for the Adults app, and whether the Facebook page was unpublished or deleted",
+      "deadline": "before 2026-W40"
+    },
+    {
+      "problem": "Competitor list still unconfirmed",
+      "impact": "Section A competitor comparison stays empty; brand-voice numbers have no competitive context",
+      "probability": "high",
+      "owner": "Patrick",
+      "nextStep": "Confirm the official competitor list + keywords (EN/AR)",
+      "deadline": "before 2026-W40"
+    },
+    {
+      "problem": "Follower counts for our two largest channels are rounded to +/-500 by the platforms",
+      "impact": "Weekly growth below ~500 followers is not measurable on TikTok/Instagram - the core KPI is blunt exactly where the audience is biggest",
+      "probability": "high",
+      "owner": "Omar / Norah",
+      "nextStep": "Exact counts need backend/API access; until then report growth for these two as directional only",
+      "deadline": "2026-W40"
+    },
+    {
+      "problem": "W38 was never collected, so this week's deltas span 15 days",
+      "impact": "All week-over-week figures on this board cover ~2 weeks, not 1",
+      "probability": "confirmed",
+      "owner": "Omar",
+      "nextStep": "Resume the Monday cadence; do not backfill W38 (see notes)",
+      "deadline": "2026-W40"
+    }
+  ],
+  "notes": "W39 captured 2026-09-22, linked against W37 (2026-09-07) - a 15-day window, as W38 was not collected. W38 is deliberately NOT backfilled: App Store, Google Play and social public endpoints only ever return CURRENT values, so a W38 snapshot could only hold Google Trends history with every other section empty. Inserting it would also make it the 'previous' snapshot for link_wow.py, wiping W39's App Store and follower baselines and leaving the board worse than it is now. Everything here ties back to growth/ROI per brief section 8."
+}

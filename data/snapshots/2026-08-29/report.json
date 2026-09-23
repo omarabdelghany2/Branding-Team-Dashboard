@@ -1,0 +1,16 @@
+{
+  "conclusions": [
+    { "text": "Baseline week (W35): dashboard structure is live; this week establishes the fixed schema and the first snapshot. No trend statements can be made yet — trends begin from W36.", "watch": "structure" },
+    { "text": "Blocked on confirmations before real numbers flow: competitor list (Patrick), official social accounts (Fei), app IDs + “exposure”/TikTok-views definitions.", "watch": "unblock" }
+  ],
+  "changeExplanation": {
+    "verified": [
+      { "observation": "No week-over-week data exists.", "cause": "First (baseline) capture — expected." }
+    ],
+    "hypotheses": []
+  },
+  "risks": [
+    { "problem": "Confirmations (competitors/accounts/app IDs/definitions) not yet in", "impact": "Sections A–C stay mostly empty; can't produce a data-driven read at Wed meeting", "probability": "high", "owner": "待确认 — Omar to drive with Patrick & Fei", "nextStep": "Send the confirmation one-pager; lock the lists before W36 collection (Mon)", "deadline": "before 2026-W36 Monday" }
+  ],
+  "notes": "Per brief §4, keep this order every week: Conclusions → Dashboard data → Change explanation (verified vs hypothesis) → Risks & actions → Data quality. Everything ties back to growth/ROI (brief §8 + 2026-08-26 meeting)."
+}

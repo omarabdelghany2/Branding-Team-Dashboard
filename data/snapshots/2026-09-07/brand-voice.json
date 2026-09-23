@@ -1,0 +1,147 @@
+{
+  "section": "A. Brand voice & competitor monitoring / 品牌声量与竞品监测",
+  "googleTrends": {
+    "source": "Google Trends (RELATIVE index 0-100, not absolute volume)",
+    "capturedAt": "2026-09-07",
+    "keyword": "51Talk",
+    "note": "Run scripts/fetch_google_trends.py once keywords are confirmed. Each entry: { market, current, prevWeek, wow, yoy, peakDate, series[] }.",
+    "entries": [
+      {
+        "market": "KSA",
+        "keyword": "51Talk",
+        "current": 22,
+        "prevWeek": 31,
+        "yoy": null,
+        "peakDate": "2026-07-15",
+        "series": [
+          {
+            "date": "2026-09-04",
+            "value": 41
+          },
+          {
+            "date": "2026-09-05",
+            "value": 39
+          },
+          {
+            "date": "2026-09-06",
+            "value": 31
+          },
+          {
+            "date": "2026-09-07",
+            "value": 22
+          }
+        ]
+      },
+      {
+        "market": "KWT",
+        "keyword": "51Talk",
+        "current": 0,
+        "prevWeek": 0,
+        "yoy": null,
+        "peakDate": "2026-07-19",
+        "series": [
+          {
+            "date": "2026-09-04",
+            "value": 0
+          },
+          {
+            "date": "2026-09-05",
+            "value": 0
+          },
+          {
+            "date": "2026-09-06",
+            "value": 0
+          },
+          {
+            "date": "2026-09-07",
+            "value": 0
+          }
+        ]
+      }
+    ]
+  },
+  "appStore": {
+    "source": "iTunes Lookup API (public)",
+    "capturedAt": "2026-09-07",
+    "note": "Run scripts/fetch_appstore.py once the iOS appId is confirmed. Each entry: { market, rank, rating, ratingCount, version, versionDate, prevRating, prevRatingCount }. Mark rank as a gap if not stably obtainable.",
+    "entries": [
+      {
+        "market": "KSA",
+        "app": "51Talk (English)",
+        "appId": "1585144932",
+        "rating": 4.30431,
+        "ratingCount": 14015,
+        "version": "6.6.6",
+        "versionDate": "2026-08-25",
+        "rank": null,
+        "prevRating": 4.30774,
+        "prevRatingCount": 13976
+      },
+      {
+        "market": "KWT",
+        "app": "51Talk (English)",
+        "appId": "1585144932",
+        "rating": 4.13755,
+        "ratingCount": 458,
+        "version": "6.6.6",
+        "versionDate": "2026-08-25",
+        "rank": null,
+        "prevRating": 4.13567,
+        "prevRatingCount": 457
+      },
+      {
+        "market": "UAE",
+        "app": "51Talk (English)",
+        "appId": "1585144932",
+        "rating": 4.36856,
+        "ratingCount": 388,
+        "version": "6.6.6",
+        "versionDate": "2026-08-25",
+        "rank": null,
+        "prevRating": 4.36856,
+        "prevRatingCount": 388
+      },
+      {
+        "market": "KSA",
+        "app": "51Talk Adults (Arabic)",
+        "appId": "6741898680",
+        "rating": 4.603,
+        "ratingCount": 3534,
+        "version": "1.2.15",
+        "versionDate": "2026-09-07",
+        "rank": null,
+        "prevRating": 4.60432,
+        "prevRatingCount": 3518
+      },
+      {
+        "market": "KWT",
+        "app": "51Talk Adults (Arabic)",
+        "appId": "6741898680",
+        "rating": 4.80597,
+        "ratingCount": 67,
+        "version": "1.2.15",
+        "versionDate": "2026-09-07",
+        "rank": null,
+        "prevRating": 4.86364,
+        "prevRatingCount": 66
+      },
+      {
+        "market": "UAE",
+        "app": "51Talk Adults (Arabic)",
+        "appId": "6741898680",
+        "rating": 4.68889,
+        "ratingCount": 90,
+        "version": "1.2.15",
+        "versionDate": "2026-09-07",
+        "rank": null,
+        "prevRating": 4.68539,
+        "prevRatingCount": 89
+      }
+    ]
+  },
+  "competitorComparison": {
+    "status": "blocked-pending-competitor-list",
+    "note": "Populated only after Patrick confirms the competitor list. Each entry: { competitor, market, metric, thisWeek, prevWeek, wow, fourWeekTrend[], relativeMove, likelyCause, hypothesisToVerify }.",
+    "entries": []
+  }
+}

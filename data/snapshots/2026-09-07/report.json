@@ -1,0 +1,24 @@
+{
+  "conclusions": [
+    { "text": "W37 is the first week with real week-over-week comparison (vs W36). Headline: things are steady and ticking up, not volatile.", "watch": "wow" },
+    { "text": "Snapchat — our largest owned channel — grew +600 followers WoW (89,900 → 90,500). YouTube flat (~2,100 subs, avg recent video views ~1,133 via API).", "watch": "social" },
+    { "text": "App Store ratings stable across both apps and all 3 markets (all within ±0.06); rating counts ticking up (KSA English +39, Adults KSA +16) — healthy steady flow, no shocks.", "watch": "reviews" },
+    { "text": "Google Trends: KSA search interest softening again (22 vs ~31 earlier); Kuwait ~0. UAE not captured this week (Google Trends rate-limited the request — data gap, will retry).", "watch": "voice" },
+    { "text": "Still pending: Hootsuite export (impressions/engagement — 2FA login in progress), Instagram/TikTok API tokens (setup started), and competitor list (Patrick).", "watch": "unblock" }
+  ],
+  "changeExplanation": {
+    "verified": [
+      { "observation": "Week-over-week deltas are now populated (W37 linked against W36).", "cause": "link_wow.py wires each week to the prior snapshot; W36 was the baseline so W37 is the first real comparison." },
+      { "observation": "Snapchat +600 followers; App Store rating counts up modestly.", "cause": "Organic accumulation over the ~4-day gap between captures — small but positive, no anomalies." }
+    ],
+    "hypotheses": [
+      { "observation": "KSA Trends index keeps softening (22 vs ~31).", "hypothesis": "Likely post-summer / back-to-school seasonality on a single keyword — needs a few more weeks + the confirmed keyword set to be sure. Not conclusive." }
+    ]
+  },
+  "risks": [
+    { "problem": "UAE Google Trends missing this week (rate-limited)", "impact": "One market's voice metric absent for W37", "probability": "low", "owner": "Omar", "nextStep": "Re-run fetch_google_trends for UAE; space out requests to avoid throttling", "deadline": "2026-W37" },
+    { "problem": "Social deep metrics (impressions/reach/engagement) still not flowing", "impact": "Section B limited to followers/growth until Hootsuite export or IG/TikTok API tokens arrive", "probability": "high", "owner": "Norah / Omar", "nextStep": "Complete Hootsuite 2FA login → export; finish IG/TikTok API setup", "deadline": "before 2026-W38" },
+    { "problem": "Competitor list still pending", "impact": "Section A competitor comparison stays empty", "probability": "high", "owner": "Patrick", "nextStep": "Confirm official competitor list + keywords", "deadline": "before 2026-W38" }
+  ],
+  "notes": "W37 = first real WoW. Everything ties back to growth/ROI (brief §8)."
+}

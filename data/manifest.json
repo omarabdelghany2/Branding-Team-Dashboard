@@ -1,0 +1,25 @@
+{
+  "note": "Ordered list of weekly snapshots (newest last). The app loads the latest for the board and the last 4 for trend lines. scripts/new_week.py appends here.",
+  "snapshots": [
+    {
+      "date": "2026-08-29",
+      "weekLabel": "2026-W35",
+      "isBaseline": true
+    },
+    {
+      "date": "2026-09-03",
+      "weekLabel": "2026-W36",
+      "isBaseline": false
+    },
+    {
+      "date": "2026-09-07",
+      "weekLabel": "2026-W37",
+      "isBaseline": false
+    },
+    {
+      "date": "2026-09-22",
+      "weekLabel": "2026-W39",
+      "isBaseline": false
+    }
+  ]
+}

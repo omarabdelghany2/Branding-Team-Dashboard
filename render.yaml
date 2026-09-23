@@ -1,0 +1,41 @@
+# Render Blueprint — 51Talk ME Brand Weekly Monitoring Dashboard
+#
+# Static site, no framework, no bundler. Render runs build.sh, which assembles
+# ./public with just index.html + assets/ + data/, then serves that directory.
+# Every push to the tracked branch redeploys automatically, so the weekly
+# routine is: run the collection scripts → commit data/ → push.
+services:
+  - type: web
+    name: 51talk-me-brand-dashboard
+    runtime: static
+    buildCommand: sh ./build.sh
+    staticPublishPath: ./public
+    pullRequestPreviewsEnabled: false
+
+    headers:
+      # Belt-and-braces alongside robots.txt — some crawlers honour only this.
+      - path: /*
+        name: X-Robots-Tag
+        value: noindex, nofollow
+
+      # The board is internal; don't let it be framed by another site.
+      - path: /*
+        name: X-Frame-Options
+        value: DENY
+
+      # app.js already cache-busts its fetches with ?_=<timestamp>, but make it
+      # explicit: the weekly JSON must never be served stale after a push.
+      - path: /data/*
+        name: Cache-Control
+        value: no-cache, must-revalidate
+
+      # Fingerprint-free asset names, so keep these short-lived too.
+      - path: /assets/*
+        name: Cache-Control
+        value: public, max-age=300
+
+    routes:
+      # Single page — send unknown paths to it rather than Render's 404.
+      - type: rewrite
+        source: /*
+        destination: /index.html

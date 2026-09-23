@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>51Talk ME · Brand Weekly Monitoring Dashboard</title>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <script src="assets/js/app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-left">
+      <div class="logo">51<span>Talk</span></div>
+      <div class="titles">
+        <h1 id="dash-title">Brand Weekly Monitoring Dashboard</h1>
+        <p id="dash-subtitle">中东品牌周会监测看板 · 声量 / 社媒 / 舆情</p>
+      </div>
+    </div>
+    <div class="topbar-right">
+      <div class="week-pill">
+        <span class="week-label" id="week-label">—</span>
+        <span class="week-period" id="week-period">—</span>
+      </div>
+      <div class="market-filter" id="market-filter"></div>
+    </div>
+  </header>
+
+  <div id="load-error" class="load-error hidden">
+    <strong>Data didn't load.</strong> Open this via a local server, not by double-clicking the file:
+    <code>cd dashboard &amp;&amp; python3 -m http.server 8000</code> → then visit
+    <code>http://localhost:8000</code>. (Browsers block <code>fetch()</code> of local files over <code>file://</code>.)
+  </div>
+
+  <nav class="section-nav" id="section-nav">
+    <a href="#conclusions">Conclusions</a>
+    <a href="#section-a">A · Voice & Competitors</a>
+    <a href="#section-b">B · Owned Social</a>
+    <a href="#section-c">C · Reviews & Sentiment</a>
+    <a href="#explanation">Change Explanation</a>
+    <a href="#risks">Risks & Actions</a>
+    <a href="#quality">Data Quality</a>
+  </nav>
+
+  <main class="content">
+    <!-- 本周结论 -->
+    <section id="conclusions" class="card">
+      <div class="card-head">
+        <h2>① This Week's Conclusions <span class="zh">本周结论</span></h2>
+        <p class="card-hint">Conclusions first, data second — what happened / impact / what to watch.</p>
+      </div>
+      <ul id="conclusions-list" class="conclusions"></ul>
+    </section>
+
+    <!-- Section A -->
+    <section id="section-a" class="card">
+      <div class="card-head">
+        <h2>A · Brand Voice &amp; Competitors <span class="zh">品牌声量与竞品监测</span></h2>
+        <p class="card-hint">Google Trends (relative index) · iOS App Store · competitor comparison + 4-week trend.</p>
+      </div>
+
+      <h3 class="sub">Google Trends <span class="tag tag-note">relative index 0–100, not volume</span></h3>
+      <div id="trends-wrap" class="table-wrap"></div>
+
+      <h3 class="sub">iOS App Store</h3>
+      <div id="appstore-wrap" class="table-wrap"></div>
+    </section>
+
+    <!-- Section B -->
+    <section id="section-b" class="card">
+      <div class="card-head">
+        <h2>B · Owned Social Media <span class="zh">自有社媒数据看板</span></h2>
+        <p class="card-hint">TikTok · Instagram · YouTube · Snapchat (X deferred). Metrics: followers, growth, posts, views, likes, comments, shares, impressions, reach, engagement — weekly + monthly. Hybrid sources (public / API / Hootsuite-Buffer import).</p>
+      </div>
+      <div id="social-legend" class="cap-legend"></div>
+      <div class="kpi-row" id="social-kpis"></div>
+      <h3 class="sub">Weekly — by account</h3>
+      <div id="social-wrap" class="table-wrap"></div>
+      <div id="social-monthly"></div>
+    </section>
+
+    <!-- Section C -->
+    <section id="section-c" class="card">
+      <div class="card-head">
+        <h2>C · Reviews &amp; Sentiment <span class="zh">用户评价与舆情</span></h2>
+        <p class="card-hint">App Store + Google Play, per market. Always report sample size + evidence strength.</p>
+      </div>
+      <h3 class="sub">Store Ratings</h3>
+      <div id="ratings-wrap" class="table-wrap"></div>
+      <h3 class="sub">Representative Reviews <span class="tag tag-note">3–5 / week</span></h3>
+      <div id="reviews-wrap" class="reviews"></div>
+    </section>
+
+    <!-- Change explanation -->
+    <section id="explanation" class="card">
+      <div class="card-head">
+        <h2>② Change Explanation <span class="zh">变化解释</span></h2>
+        <p class="card-hint">Split verified causes vs unverified hypotheses. No evidence → not a fact.</p>
+      </div>
+      <div class="two-col">
+        <div>
+          <h3 class="sub ok">Verified causes</h3>
+          <ul id="verified-list" class="plain"></ul>
+        </div>
+        <div>
+          <h3 class="sub warn">Hypotheses to verify</h3>
+          <ul id="hypotheses-list" class="plain"></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Risks -->
+    <section id="risks" class="card">
+      <div class="card-head">
+        <h2>③ Risks &amp; Actions <span class="zh">风险与行动项</span></h2>
+        <p class="card-hint">Each: problem · impact · probability · owner · next step · deadline.</p>
+      </div>
+      <div id="risks-wrap" class="table-wrap"></div>
+    </section>
+
+    <!-- Data quality -->
+    <section id="quality" class="card">
+      <div class="card-head">
+        <h2>④ Data Quality <span class="zh">数据质量</span></h2>
+        <p class="card-hint">Gaps, delays, definition changes, inaccessible platforms, new collection issues.</p>
+      </div>
+      <div id="quality-wrap" class="table-wrap"></div>
+    </section>
+
+    <!-- Open confirmations (from brief §7) -->
+    <section id="confirmations" class="card">
+      <div class="card-head">
+        <h2>⑤ Open Confirmations <span class="zh">首次启动前待确认</span></h2>
+        <p class="card-hint">Brief §7 — must be locked before the numbers can flow. Owner shown per item.</p>
+      </div>
+      <div id="confirmations-wrap" class="table-wrap"></div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span id="footer-meta">51Talk ME Brand Monitoring · MVP scaffold</span>
+    <span>Owner: <strong id="footer-owner">Omar Abdelghany</strong></span>
+  </footer>
+</body>
+</html>

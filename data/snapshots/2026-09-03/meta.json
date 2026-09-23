@@ -1,0 +1,18 @@
+{
+  "captureDate": "2026-09-03",
+  "weekLabel": "2026-W36",
+  "collectionPeriod": { "start": "2026-08-30", "end": "2026-09-05" },
+  "isBaseline": false,
+  "dataQuality": [
+    { "issue": "App Store + Google Play + Google Trends collected for BOTH apps × 3 markets.", "impact": "Sections A & C are real this week (12 rating cells + Trends + reviews).", "status": "collected", "owner": "Omar" },
+    { "issue": "KSA & UAE reviews now covered via Google Play + the Adults app (Apple flagship RSS returns 0 for SA/AE).", "impact": "Sentiment blind spot resolved.", "status": "resolved", "owner": "Omar" },
+    { "issue": "Google Play rating COUNT is global (9,107 identical across markets) and GP review country-segmentation is weak (same 'newest' review repeats across markets; deduped in code).", "impact": "Per-market Google Play rating/volume comparison is unreliable — use GP mainly for review CONTENT.", "status": "open (caveat)", "owner": "Omar" },
+    { "issue": "App Store search RANK not available via public API.", "impact": "Rank column shown as gap.", "status": "open", "owner": "Patrick (decide on ASO tool)" },
+    { "issue": "1–2★ share + new-review counts not yet computed.", "impact": "Those cells shown as gaps; can be derived from samples in a later pass.", "status": "open", "owner": "Omar" },
+    { "issue": "Google Trends is a RELATIVE index on a single draft keyword ('51Talk').", "impact": "Directional only; confirm final keyword set.", "status": "open", "owner": "Patrick" },
+    { "issue": "WoW vs last snapshot is null (baseline W35 had no A/C data).", "impact": "Clean week-over-week begins W37.", "status": "expected", "owner": "n/a" },
+    { "issue": "Owned social: 11 official accounts received (Norah); public data captured for 3 (YouTube ~2.08K approx, Snapchat 89.9K, Pinterest 0). 8 need API key/backend/export.", "impact": "Section B partially populated; deep metrics (impressions/reach/eng-rate) pending access.", "status": "partial", "owner": "Norah / Omar" },
+    { "issue": "Accounts look MENA/KSA-regional — no separate KWT/UAE handles provided.", "impact": "Per-market social split may not match reality — confirm with Norah.", "status": "open", "owner": "Norah" },
+    { "issue": "Competitor list still pending.", "impact": "Section A competitor comparison blocked.", "status": "open", "owner": "Patrick" }
+  ]
+}

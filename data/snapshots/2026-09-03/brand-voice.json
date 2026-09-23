@@ -1,0 +1,161 @@
+{
+  "section": "A. Brand voice & competitor monitoring / 品牌声量与竞品监测",
+  "googleTrends": {
+    "source": "Google Trends (RELATIVE index 0-100, not absolute volume)",
+    "capturedAt": "2026-09-03",
+    "keyword": "51Talk",
+    "note": "Run scripts/fetch_google_trends.py once keywords are confirmed. Each entry: { market, current, prevWeek, wow, yoy, peakDate, series[] }.",
+    "entries": [
+      {
+        "market": "KSA",
+        "keyword": "51Talk",
+        "current": 20,
+        "prevWeek": 28,
+        "yoy": null,
+        "peakDate": "2026-08-05",
+        "series": [
+          {
+            "date": "2026-08-31",
+            "value": 29
+          },
+          {
+            "date": "2026-09-01",
+            "value": 27
+          },
+          {
+            "date": "2026-09-02",
+            "value": 28
+          },
+          {
+            "date": "2026-09-03",
+            "value": 20
+          }
+        ]
+      },
+      {
+        "market": "KWT",
+        "keyword": "51Talk",
+        "current": 0,
+        "prevWeek": 0,
+        "yoy": null,
+        "peakDate": "2026-08-20",
+        "series": [
+          {
+            "date": "2026-08-31",
+            "value": 0
+          },
+          {
+            "date": "2026-09-01",
+            "value": 0
+          },
+          {
+            "date": "2026-09-02",
+            "value": 0
+          },
+          {
+            "date": "2026-09-03",
+            "value": 0
+          }
+        ]
+      },
+      {
+        "market": "UAE",
+        "keyword": "51Talk",
+        "current": 14,
+        "prevWeek": 0,
+        "yoy": null,
+        "peakDate": "2026-08-14",
+        "series": [
+          {
+            "date": "2026-08-31",
+            "value": 0
+          },
+          {
+            "date": "2026-09-01",
+            "value": 0
+          },
+          {
+            "date": "2026-09-02",
+            "value": 0
+          },
+          {
+            "date": "2026-09-03",
+            "value": 14
+          }
+        ]
+      }
+    ]
+  },
+  "appStore": {
+    "source": "iTunes Lookup API (public)",
+    "capturedAt": "2026-09-03",
+    "note": "Run scripts/fetch_appstore.py once the iOS appId is confirmed. Each entry: { market, rank, rating, ratingCount, version, versionDate, prevRating, prevRatingCount }. Mark rank as a gap if not stably obtainable.",
+    "entries": [
+      {
+        "market": "KSA",
+        "app": "51Talk (English)",
+        "appId": "1585144932",
+        "rating": 4.30774,
+        "ratingCount": 13976,
+        "version": "6.6.6",
+        "versionDate": "2026-08-25",
+        "rank": null
+      },
+      {
+        "market": "KWT",
+        "app": "51Talk (English)",
+        "appId": "1585144932",
+        "rating": 4.13567,
+        "ratingCount": 457,
+        "version": "6.6.6",
+        "versionDate": "2026-08-25",
+        "rank": null
+      },
+      {
+        "market": "UAE",
+        "app": "51Talk (English)",
+        "appId": "1585144932",
+        "rating": 4.36856,
+        "ratingCount": 388,
+        "version": "6.6.6",
+        "versionDate": "2026-08-25",
+        "rank": null
+      },
+      {
+        "market": "KSA",
+        "app": "51Talk Adults (Arabic)",
+        "appId": "6741898680",
+        "rating": 4.60432,
+        "ratingCount": 3518,
+        "version": "1.2.14",
+        "versionDate": "2026-08-24",
+        "rank": null
+      },
+      {
+        "market": "KWT",
+        "app": "51Talk Adults (Arabic)",
+        "appId": "6741898680",
+        "rating": 4.86364,
+        "ratingCount": 66,
+        "version": "1.2.14",
+        "versionDate": "2026-08-24",
+        "rank": null
+      },
+      {
+        "market": "UAE",
+        "app": "51Talk Adults (Arabic)",
+        "appId": "6741898680",
+        "rating": 4.68539,
+        "ratingCount": 89,
+        "version": "1.2.14",
+        "versionDate": "2026-08-24",
+        "rank": null
+      }
+    ]
+  },
+  "competitorComparison": {
+    "status": "blocked-pending-competitor-list",
+    "note": "Populated only after Patrick confirms the competitor list. Each entry: { competitor, market, metric, thisWeek, prevWeek, wow, fourWeekTrend[], relativeMove, likelyCause, hypothesisToVerify }.",
+    "entries": []
+  }
+}

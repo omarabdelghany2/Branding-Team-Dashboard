@@ -1,0 +1,14 @@
+{
+  "captureDate": "2026-09-07",
+  "weekLabel": "2026-W37",
+  "collectionPeriod": { "start": "2026-09-06", "end": "2026-09-12" },
+  "isBaseline": false,
+  "dataQuality": [
+    { "issue": "Week-over-week now ACTIVE (W37 linked vs W36) for App Store, Google Play and social followers.", "impact": "ΔRating and follower-growth columns populate.", "status": "collected", "owner": "Omar" },
+    { "issue": "UAE Google Trends missing this week (pytrends rate-limit).", "impact": "UAE voice metric absent for W37.", "status": "open", "owner": "Omar (retry)" },
+    { "issue": "Social: YouTube via API (exact 2,100 subs + video views); Snapchat 90.5K, Pinterest 0 via public. Impressions/reach/engagement pending Hootsuite export or IG/TikTok API tokens.", "impact": "Section B still followers-only for most accounts.", "status": "partial", "owner": "Norah / Omar" },
+    { "issue": "App Store + Google Play captured for both apps × 3 markets.", "impact": "Sections A & C real.", "status": "collected", "owner": "Omar" },
+    { "issue": "Google Play rating count is global (not per-market); App Store search rank needs an ASO tool.", "impact": "Known caveats/gaps.", "status": "open (caveat)", "owner": "Patrick (ASO decision)" },
+    { "issue": "Competitor list still pending (Patrick).", "impact": "Section A competitor comparison blocked.", "status": "open", "owner": "Patrick" }
+  ]
+}

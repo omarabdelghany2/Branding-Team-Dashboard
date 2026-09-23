@@ -1,0 +1,21 @@
+{
+  "section": "A. Brand voice & competitor monitoring / 品牌声量与竞品监测",
+  "googleTrends": {
+    "source": "Google Trends (RELATIVE index 0-100, not absolute volume)",
+    "capturedAt": null,
+    "keyword": "51Talk",
+    "note": "Run scripts/fetch_google_trends.py once keywords are confirmed. Each entry: { market, current, prevWeek, wow, yoy, peakDate, series[] }.",
+    "entries": []
+  },
+  "appStore": {
+    "source": "iTunes Lookup API (public)",
+    "capturedAt": null,
+    "note": "Run scripts/fetch_appstore.py once the iOS appId is confirmed. Each entry: { market, rank, rating, ratingCount, version, versionDate, prevRating, prevRatingCount }. Mark rank as a gap if not stably obtainable.",
+    "entries": []
+  },
+  "competitorComparison": {
+    "status": "blocked-pending-competitor-list",
+    "note": "Populated only after Patrick confirms the competitor list. Each entry: { competitor, market, metric, thisWeek, prevWeek, wow, fourWeekTrend[], relativeMove, likelyCause, hypothesisToVerify }.",
+    "entries": []
+  }
+}

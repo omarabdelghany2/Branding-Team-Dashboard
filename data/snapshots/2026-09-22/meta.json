@@ -1,0 +1,167 @@
+{
+  "captureDate": "2026-09-22",
+  "weekLabel": "2026-W39",
+  "collectionPeriod": {
+    "start": "2026-09-20",
+    "end": "2026-09-26"
+  },
+  "isBaseline": false,
+  "dataQuality": [
+    {
+      "issue": "MARKET STRUCTURE (verified 2026-09-23): no Kuwait- or UAE-specific social accounts exist. instagram.com/51talkkw, instagram.com/51talkuae and tiktok.com/@51talk.kw all return 'not found', and a web search surfaced no regional handles.",
+      "impact": "Section B has no KWT/UAE breakdown by structure, not by collection failure. All 11 accounts are KSA-branded but serve the region, so their followers must never be attributed to one market. Sections A and C DO carry per-market data. The board now says this explicitly instead of rendering an empty table.",
+      "status": "open (decision)",
+      "owner": "Norah / Patrick — is one regional set intentional?"
+    },
+    {
+      "issue": "PRECISION UPGRADE (2026-09-23): Instagram and Threads expose EXACT follower counts, not the rounded figures shown in their headline text. Instagram 51talkksa = 226,386 and 51talk_ad = 25,632 (from the title attribute); Threads = 7,718. TikTok improved from 226K to 226.2K (±50).",
+      "impact": "5 of 9 measured accounts now carry exact counts, so week-over-week growth becomes genuinely measurable for them from W40. Only TikTok (±50) and X (±50) remain rounded. Tracked total 599,351.",
+      "status": "fixed",
+      "owner": "Omar"
+    },
+    {
+      "issue": "Remaining rounded accounts: TikTok @51talk.ksa (226.2K, ±50) and X @51talk_ksa (16.9K, ±50).",
+      "impact": "Growth below ~50 followers is not measurable for these two. Each account records followersPrecision.",
+      "status": "open (caveat)",
+      "owner": "Omar"
+    },
+    {
+      "issue": "TikTok per-video view counts are NOT obtainable logged-out — the video grid returns 'Something went wrong'. Follower and lifetime-like totals still read fine.",
+      "impact": "The TikTok average-video-views KPI (brief §3B) stays a genuine gap on our largest channel. Needs the TikTok backend or a Hootsuite export — not solvable by browser capture.",
+      "status": "open",
+      "owner": "Norah / Omar"
+    },
+    {
+      "issue": "Two permanently-empty sections removed from the board 2026-09-23: Section A 'Competitor Comparison' and Section C 'Review Themes'.",
+      "impact": "Competitor comparison was blocked on Patrick's list and never held data — the blocker is still tracked in ⑤ Open Confirmations, so it remains visible to him. Review Themes required manual tagging that was never run; representative reviews still carry the sentiment signal.",
+      "status": "collected",
+      "owner": "Omar"
+    },
+    {
+      "issue": "Google Trends re-collected 2026-09-22 with a corrected keyword set and a 12-month (native weekly) window. All 3 markets now return data; previously Kuwait returned nothing and UAE read flat 0.",
+      "impact": "KSA 51 (prev 43) on '51Talk' and 32 (prev 18) on 'فايف ون توك'; Kuwait and UAE now measurable. 52 weeks of history available.",
+      "status": "collected",
+      "owner": "Omar"
+    },
+    {
+      "issue": "KEYWORD FIX: config listed '٢٥١ توك', which is 251 in Arabic-Indic numerals, not 51. It returns no data in any market and has been removed. 'فايف ون توك' - the phonetic Arabic form used in 51Talk's OWN account bios and in user reviews - was missing and is a strong KSA signal.",
+      "impact": "Arabic-language search interest was invisible until now. Patrick still owns final sign-off on the official keyword list.",
+      "status": "fixed",
+      "owner": "Omar -> Patrick"
+    },
+    {
+      "issue": "READ WITH CARE - Kuwait shows 100 (prev 0) and UAE 100 (prev 62), both peaking the week of 2026-09-13. In these markets nearly every week of the past year is 0, so ANY activity becomes the window maximum of 100.",
+      "impact": "100 here means 'the busiest week in 12 months', NOT 'high interest'. Kuwait's series is 0,0,0,100 - a single week off a zero baseline. Do NOT present this as Kuwait outperforming KSA. Needs 2-3 more weeks before it is a trend.",
+      "status": "open (caveat)",
+      "owner": "Omar"
+    },
+    {
+      "issue": "Trends timeframe changed from 'today 3-m' (daily) to 'today 12-m' (native weekly).",
+      "impact": "Daily points round to 0 in low-volume markets, which is why Kuwait/UAE looked empty. Weekly buckets aggregate sparse searches into a visible signal. Granularity is recorded per entry.",
+      "status": "fixed",
+      "owner": "Omar"
+    },
+    {
+      "issue": "Comparison window is 15 days, not 7 — W39 (2026-09-22) is linked against W37 (2026-09-07); W38 was never collected.",
+      "impact": "Every 'WoW' delta on the board spans ~2 weeks. Do not read them as weekly rates.",
+      "status": "open (caveat)",
+      "owner": "Omar"
+    },
+    {
+      "issue": "Google Trends re-normalises to 100 within each requested window, so its index is NOT comparable across snapshots.",
+      "impact": "current-vs-prevWeek inside one fetch is valid; comparing W39's 13 against W37's stored 22 is not. Never chart Trends across weeks.",
+      "status": "open (caveat)",
+      "owner": "Omar"
+    },
+    {
+      "issue": "YouTube average-video-views was inconsistent between collectors: the public RSS path averaged 15 videos (24,968) and the API path 10 videos (1,096) for the same channel, and whichever ran last overwrote the other. Root cause: a single 355,574-view video, 61x the next highest.",
+      "impact": "Fixed 2026-09-22 — both collectors now share one 10-upload window and report MEDIAN (996) alongside mean (1,096), sample size and max, with an outlier flag. Brief §3B: a single hit must not represent the average.",
+      "status": "fixed",
+      "owner": "Omar"
+    },
+    {
+      "issue": "Proposed definition for the avg-views KPI: median of the 10 most recent uploads, excluding live. Still needs formal sign-off.",
+      "impact": "config.definitions.tiktokAvgViews stays 'pending-confirmation' until Patrick/Fei rule.",
+      "status": "open",
+      "owner": "Patrick / Fei"
+    },
+    {
+      "issue": "Section B now covers 9 of 11 accounts (was 3). TikTok, Instagram, X and Threads were unblocked on 2026-09-22 by reading the PUBLIC profiles in a browser — server-side requests are blocked, a real browser is not.",
+      "impact": "Tracked followers rose from ~94,700 to 598,728. TikTok @51talk.ksa (226K) and Instagram 51talkksa (226K) had been entirely absent from the board.",
+      "status": "collected",
+      "owner": "Omar"
+    },
+    {
+      "issue": "Impressions, reach, shares and engagement rate are null for every account.",
+      "impact": "No platform backend access yet; Section B remains followers + views only.",
+      "status": "open",
+      "owner": "Norah (Hootsuite export) / Omar (IG + TikTok tokens)"
+    },
+    {
+      "issue": "Google Play rating COUNT is global (9,301 for all three markets), not per-storefront.",
+      "impact": "Per-market Google Play rating comparison is weak; use Google Play mainly for per-country review sentiment. App Store counts ARE per-market.",
+      "status": "open (caveat)",
+      "owner": "Patrick (ASO decision)"
+    },
+    {
+      "issue": "Adults (Arabic) Google Play score fell ~0.09 in KSA/KWT — but the global rating pool is only n=173.",
+      "impact": "Sample far too small to call a trend; a handful of ratings moves it. Do not escalate.",
+      "status": "open (caveat)",
+      "owner": "Omar"
+    },
+    {
+      "issue": "App Store search rank still unavailable (needs a paid ASO tool); 1–2★ share unavailable from public endpoints.",
+      "impact": "Known permanent gaps until an ASO tool is funded.",
+      "status": "open",
+      "owner": "Patrick (ASO decision)"
+    },
+    {
+      "issue": "Competitor list still pending Patrick — Section A competitor comparison stays empty by design.",
+      "impact": "No competitive context for the voice metrics.",
+      "status": "open",
+      "owner": "Patrick"
+    },
+    {
+      "issue": "All 11 configured accounts are tagged country=KSA.",
+      "impact": "Filtering the board to KWT or UAE empties Section B entirely. Confirm with Norah whether Kuwait/UAE have their own handles or share one MENA set.",
+      "status": "open",
+      "owner": "Norah"
+    },
+    {
+      "issue": "The six browser-captured accounts have no prior baseline (W37 recorded them as gaps), so their growth is null this week by design.",
+      "impact": "Genuine WoW growth for TikTok/Instagram/X/Threads starts from W40 onward.",
+      "status": "expected",
+      "owner": "Omar"
+    },
+    {
+      "issue": "TikTok @51talkad does not exist — the profile returns \"Couldn't find this account\". config had it as 'login-gated per Norah'.",
+      "impact": "One of the two Adults-app social accounts is unreachable; the roster is wrong, not just inaccessible.",
+      "status": "open",
+      "owner": "Norah (supply correct handle or retire)"
+    },
+    {
+      "issue": "Facebook 51TalkAR is not publicly viewable — \"This content isn't available at the moment\" (restricted, unpublished or deleted).",
+      "impact": "Not a scraping limitation; the page itself is unavailable. Needs Meta Business access to diagnose.",
+      "status": "open",
+      "owner": "Norah / Patrick (Meta Business access)"
+    },
+    {
+      "issue": "X (Twitter) was deferred as 'paid API only'. Follower and post counts are in fact readable from the public profile without the paid API.",
+      "impact": "X follower tracking is unblocked at no cost; only impressions/engagement still need the paid tier. config.socialAccounts.phase2.deferred updated.",
+      "status": "fixed",
+      "owner": "Omar"
+    },
+    {
+      "issue": "Lifetime totals (Instagram 554 posts, X 1,369 posts, Threads 205, TikTok 1.3M likes) are STOCK values, recorded as lifetimePosts/lifetimeLikes.",
+      "impact": "Deliberately kept out of the canonical posts/likes columns, which the monthly rollup SUMS as per-period flows — importing them there would have produced nonsense totals.",
+      "status": "collected",
+      "owner": "Omar"
+    },
+    {
+      "issue": "All collection scripts crashed on Windows before any output: they print ✓/✗ and the console codepage is cp1252.",
+      "impact": "Fixed 2026-09-22 — every script now reconfigures stdout/stderr to UTF-8 on import. This had been blocking the whole pipeline on this machine.",
+      "status": "fixed",
+      "owner": "Omar"
+    }
+  ]
+}

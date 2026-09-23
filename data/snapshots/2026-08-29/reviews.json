@@ -1,0 +1,17 @@
+{
+  "section": "C. User reviews & sentiment / 用户评价与舆情",
+  "note": "App Store + Google Play, per market. Report sample size + evidence strength; never escalate a single review into an overall conclusion.",
+  "status": "pending-app-ids",
+  "storeRatings": {
+    "note": "Each entry: { market, store, rating, ratingCount, prevRating, prevRatingCount, oneTwoStarShare, newReviews, spikeWindow }.",
+    "entries": []
+  },
+  "themes": {
+    "note": "Each: { theme, count, sampleShare, trend }. Themes: product experience, course/teacher, support, payment, tech faults, login, refund, price, kids' learning outcome.",
+    "entries": []
+  },
+  "representativeReviews": {
+    "note": "3–5 per week. Each: { quote, link, language, market, store, date, sentiment, evidenceStrength }.",
+    "entries": []
+  }
+}
