@@ -1,5 +1,7 @@
 # Brand Weekly Monitoring Dashboard
 
+**Live:** https://omarabdelghany2.github.io/Branding-Team-Dashboard/
+
 A weekly brand-health board for the Middle East markets (Saudi Arabia, Kuwait,
 UAE): search interest, owned social channels, and app-store ratings & reviews,
 captured as a dated snapshot each week so changes are visible over time.
@@ -62,17 +64,19 @@ git add data/ && git commit -m "W<nn> data" && git push
 
 ## Deployment
 
-Deployed on Render as a static site; every push to `main` redeploys.
+Deployed to **GitHub Pages** by `.github/workflows/deploy.yml`; every push to
+`main` rebuilds and redeploys in about a minute.
 
 `build.sh` assembles `./public` from **only** `index.html`, `assets/` and
 `data/`, so the collection scripts and any local notes are never served.
 `robots.txt` and `X-Robots-Tag: noindex` keep the board out of search results.
 
-```
-Build command    : sh ./build.sh
-Publish directory: public
-Branch           : main
-```
+The workflow also refuses to publish if any credential-shaped file or `.py`
+script ends up in `public/`, so a mistake in `build.sh` cannot leak through the
+deploy.
+
+`render.yaml` is kept in the repo so the site can be moved to Render instead
+without reconfiguring anything.
 
 `data/*` is served `no-cache` and the app cache-busts its own fetches, so a
 push appears on the live board immediately.
