@@ -1,0 +1,14 @@
+# Collection-script dependencies.
+#
+# The App Store fetcher, the public social collector, the YouTube fetcher, the
+# CSV importer, new_week.py and link_wow.py are all STDLIB ONLY — they run with
+# nothing installed. Only the two below add anything.
+#
+#   pip install -r requirements.txt
+#
+# Use Python 3.12 if you have a choice: pytrends pulls in pandas, and 3.12 has
+# the widest wheel coverage.
+
+pytrends>=4.9.2            # Google Trends (Section A voice metric); pulls in pandas
+google-play-scraper>=1.2.7 # Google Play ratings + per-country reviews (Section C)
+certifi>=2024.2.2          # optional: TLS roots, used if present by the fetchers

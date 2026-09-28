@@ -93,3 +93,46 @@ push appears on the live board immediately.
 `.gitignore` excludes credential-shaped files, and `.git/hooks/pre-commit`
 blocks commits containing them. **Hooks are not copied by `git clone`** — 
 reinstall it on any new machine.
+
+---
+
+## Working on another machine
+
+```bash
+git clone https://github.com/omarabdelghany2/Branding-Team-Dashboard.git
+cd Branding-Team-Dashboard
+
+# 1. Enable the credential-blocking pre-commit hook.
+#    Git does NOT enable hooks from a clone automatically — this one line
+#    points git at the tracked .githooks/ directory. Do it once per machine.
+git config core.hooksPath .githooks
+
+# 2. Install the two optional collector dependencies (everything else is stdlib).
+pip install -r requirements.txt
+
+# 3. Serve the board locally.
+python -m http.server 8000     # → http://localhost:8000
+```
+
+### Verify the hook is active
+
+```bash
+git config core.hooksPath        # must print: .githooks
+```
+
+If that prints nothing, the hook is **not** running and credential files are
+protected only by `.gitignore`.
+
+### API keys
+
+`scripts/secrets.local.json` is deliberately not in this repository. Copy
+`scripts/secrets.local.json.example` to `scripts/secrets.local.json` and fill in
+what you have. Without it, `fetch_youtube.py`, `fetch_instagram.py` and
+`fetch_tiktok_api.py` exit with setup instructions rather than writing fake data;
+every other collector runs fine without any key.
+
+### Python version
+
+Use Python 3.12 where possible — `pytrends` pulls in `pandas`, which has the
+widest wheel coverage there. All scripts force UTF-8 output, so the ✓/✗ glyphs
+work on a Windows console (cp1252) without crashing.

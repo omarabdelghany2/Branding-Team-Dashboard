@@ -1,0 +1,33 @@
+#!/bin/sh
+# Blocks any commit that would add a credential file to the repo.
+# The dashboard deploys to a PUBLIC Render URL, so anything committed here
+# becomes publicly downloadable. This hook is the last line of defence and
+# catches `git add -f`, which .gitignore alone cannot.
+
+blocked=$(git diff --cached --name-only --diff-filter=ACM | grep -Ei \
+  '(password|passwd| PW\.md$|credential|secret|\.env$|\.pem$|\.key$)' \
+  | grep -v 'secrets.local.json.example')
+
+if [ -n "$blocked" ]; then
+  echo ""
+  echo "  COMMIT BLOCKED — these look like credential files:"
+  echo "$blocked" | sed 's/^/     /'
+  echo ""
+  echo "  This repo deploys to a PUBLIC URL. Committing these would expose them."
+  echo "  If one is genuinely safe, override with:  git commit --no-verify"
+  echo ""
+  exit 1
+fi
+
+# Also scan staged content for obvious secret-shaped strings
+leak=$(git diff --cached -U0 | grep -Ei '^\+.*(AIza[0-9A-Za-z_-]{20,}|password\s*[:=]\s*\S|api[_-]?key\s*[:=]\s*["'"'"'][^"'"'"']{8,})' | head -5)
+if [ -n "$leak" ]; then
+  echo ""
+  echo "  COMMIT BLOCKED — staged content contains secret-shaped values:"
+  echo "$leak" | cut -c1-100 | sed 's/^/     /'
+  echo ""
+  echo "  Override with:  git commit --no-verify"
+  echo ""
+  exit 1
+fi
+exit 0
