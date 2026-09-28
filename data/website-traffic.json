@@ -1,0 +1,33 @@
+{
+  "meta": {
+    "section": "D. Website traffic / 官网流量",
+    "status": "blocked-need-source",
+    "capturedAt": "2026-09-28",
+    "note": "New module requested by the manager (2026-09-28) to watch current website traffic performance. No analytics access yet — this section is ready to fill the moment a source is connected. Never fabricate traffic numbers; a missing value stays a TBC gap.",
+    "window": "monthly (align to the social tracker's 12-month grid)",
+    "metrics": [
+      "sessions",
+      "users",
+      "newUsers",
+      "pageviews",
+      "avgEngagementTimeSec",
+      "bounceRate",
+      "conversions"
+    ],
+    "blocker": {
+      "issue": "No web-analytics access for the 51Talk ME site(s).",
+      "needs": "One of: GA4 property + API/service-account access · a SimilarWeb / Semrush export · a monthly CSV from whoever owns web analytics.",
+      "owner": "Patrick / Web team / Omar",
+      "questionsForManager": [
+        "Which site(s) should we track — 51talk.com/ar, a KSA landing page, campaign LPs?",
+        "Which analytics tool do we have access to — GA4, Adobe Analytics, SimilarWeb, Semrush?",
+        "Who can grant read access, or provide a monthly export?"
+      ],
+      "ready": "As soon as a source is confirmed, scripts/fetch_website_traffic.py --csv <export> writes the monthly rows here and the section renders."
+    }
+  },
+  "sites": [],
+  "months": [],
+  "topChannels": [],
+  "topPages": []
+}

@@ -36,6 +36,7 @@
     <a href="#section-a">A · Voice & Competitors</a>
     <a href="#section-b">B · Owned Social</a>
     <a href="#section-c">C · Reviews & Sentiment</a>
+    <a href="#section-d">D · Website Traffic</a>
     <a href="#explanation">Change Explanation</a>
     <a href="#risks">Risks & Actions</a>
     <a href="#quality">Data Quality</a>
@@ -55,27 +56,41 @@
     <section id="section-a" class="card">
       <div class="card-head">
         <h2>A · Brand Voice &amp; Competitors <span class="zh">品牌声量与竞品监测</span></h2>
-        <p class="card-hint">Google Trends (relative index) · iOS App Store · competitor comparison + 4-week trend.</p>
+        <p class="card-hint">Search interest (6-month, relative index) · iOS App Store rating (12-month trend) · competitor comparison.</p>
       </div>
 
-      <h3 class="sub">Google Trends <span class="tag tag-note">relative index 0–100, not volume</span></h3>
+      <h3 class="sub">Search interest — 6-month comparison <span class="tag tag-note">relative index 0–100, not volume</span></h3>
+      <div id="trends-chart-wrap"></div>
+
+      <h3 class="sub">Google Trends — weekly detail</h3>
       <div id="trends-wrap" class="table-wrap"></div>
 
-      <h3 class="sub">iOS App Store</h3>
+      <h3 class="sub">iOS App Store — current</h3>
       <div id="appstore-wrap" class="table-wrap"></div>
+
+      <h3 class="sub">App Store rating — 12-month rolling trend</h3>
+      <div id="appstore-trend-wrap"></div>
     </section>
 
     <!-- Section B -->
     <section id="section-b" class="card">
       <div class="card-head">
         <h2>B · Owned Social Media <span class="zh">自有社媒数据看板</span></h2>
-        <p class="card-hint">TikTok · Instagram · YouTube · Snapchat (X deferred). Metrics: followers, growth, posts, views, likes, comments, shares, impressions, reach, engagement — weekly + monthly. Hybrid sources (public / API / Hootsuite-Buffer import).</p>
+        <p class="card-hint">Monthly performance vs target, sourced from the team's <strong>“5.2 Yearly Target Tracker”</strong> (DingTalk). Followers · Leads · Views per channel, with attainment %. Live public-count snapshot is folded in below.</p>
       </div>
-      <div id="social-legend" class="cap-legend"></div>
-      <div class="kpi-row" id="social-kpis"></div>
-      <h3 class="sub">Weekly — by account</h3>
-      <div id="social-wrap" class="table-wrap"></div>
-      <div id="social-monthly"></div>
+
+      <!-- Monthly Target Tracker — the team's own numbers (manager: rely on their numbers) -->
+      <div id="tracker-wrap"></div>
+
+      <!-- Live weekly account snapshot (browser-capture / API) — secondary detail -->
+      <details id="social-detail" class="detail-block">
+        <summary>Live account snapshot <span class="tag tag-note">weekly public counts · browser-capture / API</span></summary>
+        <div id="social-legend" class="cap-legend"></div>
+        <div class="kpi-row" id="social-kpis"></div>
+        <h3 class="sub">Weekly — by account</h3>
+        <div id="social-wrap" class="table-wrap"></div>
+        <div id="social-monthly"></div>
+      </details>
     </section>
 
     <!-- Section C -->
@@ -88,6 +103,15 @@
       <div id="ratings-wrap" class="table-wrap"></div>
       <h3 class="sub">Representative Reviews <span class="tag tag-note">3–5 / week</span></h3>
       <div id="reviews-wrap" class="reviews"></div>
+    </section>
+
+    <!-- Section D -->
+    <section id="section-d" class="card">
+      <div class="card-head">
+        <h2>D · Website Traffic <span class="zh">官网流量</span></h2>
+        <p class="card-hint">Current website performance — sessions, users, sources. New module (2026-09-28) — awaiting an analytics data source.</p>
+      </div>
+      <div id="website-wrap"></div>
     </section>
 
     <!-- Change explanation -->

@@ -1,0 +1,1532 @@
+{
+  "meta": {
+    "source": "DingTalk · 5.2 Yearly Target Tracker",
+    "sourceUrl": "https://alidocs.dingtalk.com/i/nodes/P0MALyR8kl4DxXd2TQ7K11jBW3bzYmDO",
+    "nodeId": "P0MALyR8kl4DxXd2TQ7K11jBW3bzYmDO",
+    "owner": "Social team (maintained in DingTalk) — Norah / Fei",
+    "capturedAt": "2026-09-28",
+    "year": 2026,
+    "note": "Owned-social MONTHLY performance vs target, mirrored from the team's own tracker. 'views' = Total Views per channel (Views block has no target in the sheet); 'avgTikTokView' = Ave. TikTok View (mean views per TikTok video) with its own monthly target. pct fields are true ratios (0.85 = 85%). Blank stays blank — never zero-filled. KWT/UAE tabs are empty templates: no market-specific accounts exist yet.",
+    "channels": [
+      "tiktok",
+      "instagram",
+      "snapchat",
+      "x",
+      "youtube"
+    ],
+    "metrics": [
+      "followers",
+      "leads",
+      "views",
+      "avgTikTokView"
+    ],
+    "metricLabels": {
+      "followers": "Followers Increasing",
+      "leads": "Leads",
+      "views": "Total Views",
+      "avgTikTokView": "Ave. TikTok View"
+    }
+  },
+  "markets": {
+    "KSA": {
+      "code": "KSA",
+      "hasData": true,
+      "monthsWithData": 7,
+      "months": [
+        {
+          "month": 1,
+          "followers": {
+            "tiktok": 8336,
+            "instagram": null,
+            "snapchat": null,
+            "x": 160,
+            "youtube": null,
+            "total": 8496,
+            "target": 10000,
+            "pct": 0.8496
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": 800,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": 79850531,
+            "instagram": null,
+            "snapchat": null,
+            "x": 2400,
+            "youtube": 17100,
+            "total": 79870031,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": 2000,
+            "pct": 0
+          }
+        },
+        {
+          "month": 2,
+          "followers": {
+            "tiktok": 4484,
+            "instagram": 5102,
+            "snapchat": null,
+            "x": 215,
+            "youtube": null,
+            "total": 9801,
+            "target": 20000,
+            "pct": 0.49005
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 673,
+            "target": 600,
+            "pct": 1.12166666666667
+          },
+          "views": {
+            "tiktok": 54683396,
+            "instagram": null,
+            "snapchat": null,
+            "x": 6300,
+            "youtube": 13500,
+            "total": 54703196,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": 2000,
+            "pct": 0
+          }
+        },
+        {
+          "month": 3,
+          "followers": {
+            "tiktok": 3210,
+            "instagram": null,
+            "snapchat": null,
+            "x": 2613,
+            "youtube": 173,
+            "total": 5996,
+            "target": 20000,
+            "pct": 0.2998
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 749,
+            "target": 800,
+            "pct": 0.93625
+          },
+          "views": {
+            "tiktok": 14234992,
+            "instagram": null,
+            "snapchat": null,
+            "x": 19400,
+            "youtube": 365200,
+            "total": 14619592,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": 4000,
+            "pct": 0
+          }
+        },
+        {
+          "month": 4,
+          "followers": {
+            "tiktok": 4026,
+            "instagram": 5767,
+            "snapchat": null,
+            "x": 127,
+            "youtube": 149,
+            "total": 10069,
+            "target": 20000,
+            "pct": 0.50345
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 914,
+            "target": 1200,
+            "pct": 0.761666666666667
+          },
+          "views": {
+            "tiktok": 26062356,
+            "instagram": 16936136,
+            "snapchat": null,
+            "x": 2200,
+            "youtube": 16800,
+            "total": 43017492,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": 6000,
+            "pct": 0
+          }
+        },
+        {
+          "month": 5,
+          "followers": {
+            "tiktok": 6836,
+            "instagram": 3985,
+            "snapchat": 3898,
+            "x": 60,
+            "youtube": 170,
+            "total": 14949,
+            "target": 30000,
+            "pct": 0.4983
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 523,
+            "target": 1400,
+            "pct": 0.373571428571429
+          },
+          "views": {
+            "tiktok": 27583942,
+            "instagram": 15382363,
+            "snapchat": 286346,
+            "x": 1900,
+            "youtube": 16300,
+            "total": 43270851,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": 7000,
+            "pct": 0
+          }
+        },
+        {
+          "month": 6,
+          "followers": {
+            "tiktok": 20220,
+            "instagram": 5084,
+            "snapchat": 3360,
+            "x": 451,
+            "youtube": 163,
+            "total": 29278,
+            "target": 30000,
+            "pct": 0.975933333333333
+          },
+          "leads": {
+            "tiktok": 549,
+            "instagram": 404,
+            "snapchat": 143,
+            "x": 19,
+            "youtube": 8,
+            "total": 1123,
+            "target": 1600,
+            "pct": 0.701875
+          },
+          "views": {
+            "tiktok": 49347946,
+            "instagram": 13965868,
+            "snapchat": 152096,
+            "x": 2100,
+            "youtube": 14416,
+            "total": 63482426,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": 10000,
+            "target": 8000,
+            "pct": 1.25
+          }
+        },
+        {
+          "month": 7,
+          "followers": {
+            "tiktok": 5109,
+            "instagram": 1617,
+            "snapchat": 9,
+            "x": 17,
+            "youtube": 44,
+            "total": 6796,
+            "target": 30000,
+            "pct": 0.226533333333333
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": 1600,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": 17258789,
+            "instagram": 4622324,
+            "snapchat": 84667,
+            "x": 11058,
+            "youtube": 4000,
+            "total": 21980838,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": 6000,
+            "target": 9000,
+            "pct": 0.666666666666667
+          }
+        },
+        {
+          "month": 8,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": 30000,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": 1600,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": 10000,
+            "pct": 0
+          }
+        },
+        {
+          "month": 9,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": 30000,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": 1600,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": 12000,
+            "pct": 0
+          }
+        },
+        {
+          "month": 10,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": 20000,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": 1000,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": 15000,
+            "pct": 0
+          }
+        },
+        {
+          "month": 11,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": 20000,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": 1000,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": 18000,
+            "pct": 0
+          }
+        },
+        {
+          "month": 12,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": 20000,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": 1000,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": 20000,
+            "pct": 0
+          }
+        }
+      ],
+      "yearly": {
+        "followers": {
+          "tiktok": 52221,
+          "instagram": 21555,
+          "snapchat": 7267,
+          "x": 3643,
+          "youtube": 699,
+          "total": 85385,
+          "target": 280000,
+          "pct": 0.304946428571429
+        },
+        "leads": {
+          "tiktok": 549,
+          "instagram": 404,
+          "snapchat": 143,
+          "x": 19,
+          "youtube": 8,
+          "total": 3982,
+          "target": 14200,
+          "pct": 0.280422535211268
+        },
+        "views": {
+          "tiktok": 269021952,
+          "instagram": 50906691,
+          "snapchat": 523109,
+          "x": 45358,
+          "youtube": 447316,
+          "total": 320944426,
+          "target": null,
+          "pct": null
+        },
+        "avgTikTokView": {
+          "value": null,
+          "target": null,
+          "pct": null
+        }
+      }
+    },
+    "KWT": {
+      "code": "KWT",
+      "hasData": false,
+      "monthsWithData": 0,
+      "months": [
+        {
+          "month": 1,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 2,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 3,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 4,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 5,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 6,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 7,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 8,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 9,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 10,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 11,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 12,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        }
+      ],
+      "yearly": {
+        "followers": {
+          "tiktok": 0,
+          "instagram": 0,
+          "snapchat": 0,
+          "x": 0,
+          "youtube": 0,
+          "total": 0,
+          "target": 0,
+          "pct": 0
+        },
+        "leads": {
+          "tiktok": 0,
+          "instagram": 0,
+          "snapchat": 0,
+          "x": 0,
+          "youtube": 0,
+          "total": 0,
+          "target": 0,
+          "pct": 0
+        },
+        "views": {
+          "tiktok": 0,
+          "instagram": 0,
+          "snapchat": 0,
+          "x": 0,
+          "youtube": 0,
+          "total": 0,
+          "target": null,
+          "pct": null
+        },
+        "avgTikTokView": {
+          "value": null,
+          "target": null,
+          "pct": null
+        }
+      }
+    },
+    "UAE": {
+      "code": "UAE",
+      "hasData": false,
+      "monthsWithData": 0,
+      "months": [
+        {
+          "month": 1,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 2,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 3,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 4,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 5,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 6,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 7,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 8,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 9,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 10,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 11,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        },
+        {
+          "month": 12,
+          "followers": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "leads": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": 0,
+            "target": null,
+            "pct": 0
+          },
+          "views": {
+            "tiktok": null,
+            "instagram": null,
+            "snapchat": null,
+            "x": null,
+            "youtube": null,
+            "total": null,
+            "target": null,
+            "pct": null
+          },
+          "avgTikTokView": {
+            "value": null,
+            "target": null,
+            "pct": 0
+          }
+        }
+      ],
+      "yearly": {
+        "followers": {
+          "tiktok": 0,
+          "instagram": 0,
+          "snapchat": 0,
+          "x": 0,
+          "youtube": 0,
+          "total": 0,
+          "target": 0,
+          "pct": 0
+        },
+        "leads": {
+          "tiktok": 0,
+          "instagram": 0,
+          "snapchat": 0,
+          "x": 0,
+          "youtube": 0,
+          "total": 0,
+          "target": 0,
+          "pct": 0
+        },
+        "views": {
+          "tiktok": 0,
+          "instagram": 0,
+          "snapchat": 0,
+          "x": 0,
+          "youtube": 0,
+          "total": 0,
+          "target": null,
+          "pct": null
+        },
+        "avgTikTokView": {
+          "value": null,
+          "target": null,
+          "pct": null
+        }
+      }
+    }
+  }
+}

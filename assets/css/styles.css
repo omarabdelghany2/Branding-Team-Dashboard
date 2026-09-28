@@ -259,8 +259,72 @@ svg.spark { vertical-align: middle; }
 }
 .load-error code { display: inline-block; margin: 2px 4px; }
 
+/* ===================================================================
+   Charts, target-tracker, website blocker  (added 2026-09-28 for the
+   manager's feedback: 6-month trends, monthly social tracker, App Store
+   trend, website traffic)
+   =================================================================== */
+
+/* Multi-line SVG charts (Google-Trends style) */
+.chart { margin: 6px 0 4px; }
+.chart-block { margin-bottom: 14px; }
+.chart-block:last-child { margin-bottom: 4px; }
+.chart-title { font-size: 12.5px; font-weight: 600; color: var(--text); display: inline-flex; align-items: center; gap: 8px; }
+.chart-legend { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 2px 0 8px; }
+.lg-item { font-size: 11.5px; color: var(--muted); display: inline-flex; align-items: center; gap: 5px; }
+.lg-item b { color: var(--text); font-variant-numeric: tabular-nums; }
+.lg-swatch { width: 11px; height: 3px; border-radius: 2px; display: inline-block; }
+.linechart { width: 100%; height: auto; display: block; background: var(--panel-2);
+  border: 1px solid var(--line); border-radius: 10px; padding: 4px; }
+.linechart .grid-line { stroke: var(--line); stroke-width: 1; }
+.linechart .axis-label { fill: var(--muted); font-size: 9.5px; font-variant-numeric: tabular-nums; }
+.chart-note { font-size: 11.5px; color: var(--muted); margin: 6px 2px 0; line-height: 1.5; }
+.chart-note-owner { font-style: italic; }
+
+/* Attainment / progress bar (vs target %) */
+.pbar { display: inline-block; width: 62px; height: 8px; border-radius: 5px; background: var(--panel-2);
+  border: 1px solid var(--line); vertical-align: middle; overflow: hidden; }
+.pbar-fill { display: block; height: 100%; border-radius: 5px 0 0 5px; }
+.pb-ok { background: var(--ok); } .pb-warn { background: var(--warn); } .pb-low { background: var(--bad); }
+.pbar-num { font-size: 11.5px; font-variant-numeric: tabular-nums; color: var(--muted); margin-left: 6px; }
+.pbar-cell { white-space: nowrap; }
+
+/* Segmented metric toggle */
+.tracker-controls { display: flex; align-items: center; gap: 14px; flex-wrap: wrap; margin: 14px 0 8px; }
+.seg { display: inline-flex; background: var(--panel-2); border: 1px solid var(--line); border-radius: 9px; padding: 3px; gap: 2px; flex-wrap: wrap; }
+.seg button { border: none; background: transparent; color: var(--muted); font-size: 12px; font-weight: 600;
+  padding: 5px 11px; border-radius: 7px; cursor: pointer; transition: all .12s; }
+.seg button:hover { color: var(--text); }
+.seg button.active { background: var(--accent); color: var(--accent-ink); }
+
+/* Tracker header + table accents */
+.tracker-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; margin-bottom: 10px; }
+.tracker-market { font-size: 14px; font-weight: 700; color: var(--accent-2); }
+.src-line { font-size: 11.5px; color: var(--muted); }
+.src-line a { color: var(--accent-2); }
+td.total-cell { font-weight: 700; }
+td.yr-cell { font-weight: 800; color: var(--accent-2); }
+tr:has(td.yr-cell) { background: var(--panel-2); }
+.dash { color: var(--muted); }
+
+/* Folded live-account detail */
+.detail-block { margin-top: 16px; border-top: 1px dashed var(--line); padding-top: 12px; }
+.detail-block > summary { cursor: pointer; font-size: 13px; font-weight: 600; color: var(--text); list-style: revert;
+  display: flex; align-items: center; gap: 8px; padding: 4px 0; }
+.detail-block > summary:hover { color: var(--accent-2); }
+.detail-block[open] > summary { margin-bottom: 12px; }
+
+/* Blocker cards (Section D + tracker empty markets) */
+.blocker { background: var(--gap-tint); border: 1px solid var(--gap-line); border-radius: 10px; padding: 14px 16px; }
+.blocker-title { font-size: 13.5px; font-weight: 600; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 10px; }
+.blocker-body p { margin: 6px 0; font-size: 13px; }
+.blocker-body ul { margin: 6px 0; }
+.blocker-lite { background: var(--panel-2); border: 1px solid var(--line); border-radius: 10px; padding: 14px 16px; font-size: 13px; line-height: 1.6; }
+.blocker-lite .src-line { margin-top: 8px; }
+
 @media (max-width: 760px) {
   .two-col { grid-template-columns: 1fr; }
   .topbar { flex-direction: column; align-items: flex-start; }
   .section-nav { top: 0; }
+  .tracker-head { flex-direction: column; }
 }

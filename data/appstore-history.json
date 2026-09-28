@@ -1,0 +1,181 @@
+{
+  "meta": {
+    "source": "iTunes Lookup API (current aggregate) + our weekly captures",
+    "window": "12-month rolling",
+    "capturedAt": "2026-09-28",
+    "note": "Apple exposes only the CURRENT aggregate rating — no public history. This file accumulates one dated point per capture, so the rolling view fills forward from our first snapshot. Full 12-month backfill needs a paid ASO history source.",
+    "backfillBlocked": true,
+    "backfillNeeds": "Paid ASO tool (AppFollow / Sensor Tower / AppTweak) for historical ratings",
+    "backfillOwner": "Patrick / Omar"
+  },
+  "series": [
+    {
+      "appId": "1585144932",
+      "app": "51Talk (English)",
+      "market": "KSA",
+      "store": "App Store",
+      "points": [
+        {
+          "date": "2026-09-03",
+          "rating": 4.308,
+          "ratingCount": 13976
+        },
+        {
+          "date": "2026-09-07",
+          "rating": 4.304,
+          "ratingCount": 14015
+        },
+        {
+          "date": "2026-09-22",
+          "rating": 4.29,
+          "ratingCount": 14445
+        },
+        {
+          "date": "2026-09-28",
+          "rating": 4.28,
+          "ratingCount": 14594
+        }
+      ]
+    },
+    {
+      "appId": "1585144932",
+      "app": "51Talk (English)",
+      "market": "KWT",
+      "store": "App Store",
+      "points": [
+        {
+          "date": "2026-09-03",
+          "rating": 4.136,
+          "ratingCount": 457
+        },
+        {
+          "date": "2026-09-07",
+          "rating": 4.138,
+          "ratingCount": 458
+        },
+        {
+          "date": "2026-09-22",
+          "rating": 4.134,
+          "ratingCount": 471
+        },
+        {
+          "date": "2026-09-28",
+          "rating": 4.128,
+          "ratingCount": 477
+        }
+      ]
+    },
+    {
+      "appId": "1585144932",
+      "app": "51Talk (English)",
+      "market": "UAE",
+      "store": "App Store",
+      "points": [
+        {
+          "date": "2026-09-03",
+          "rating": 4.369,
+          "ratingCount": 388
+        },
+        {
+          "date": "2026-09-07",
+          "rating": 4.369,
+          "ratingCount": 388
+        },
+        {
+          "date": "2026-09-22",
+          "rating": 4.369,
+          "ratingCount": 393
+        },
+        {
+          "date": "2026-09-28",
+          "rating": 4.365,
+          "ratingCount": 397
+        }
+      ]
+    },
+    {
+      "appId": "6741898680",
+      "app": "51Talk Adults (Arabic)",
+      "market": "KSA",
+      "store": "App Store",
+      "points": [
+        {
+          "date": "2026-09-03",
+          "rating": 4.604,
+          "ratingCount": 3518
+        },
+        {
+          "date": "2026-09-07",
+          "rating": 4.603,
+          "ratingCount": 3534
+        },
+        {
+          "date": "2026-09-22",
+          "rating": 4.6,
+          "ratingCount": 3663
+        },
+        {
+          "date": "2026-09-28",
+          "rating": 4.597,
+          "ratingCount": 3696
+        }
+      ]
+    },
+    {
+      "appId": "6741898680",
+      "app": "51Talk Adults (Arabic)",
+      "market": "KWT",
+      "store": "App Store",
+      "points": [
+        {
+          "date": "2026-09-03",
+          "rating": 4.864,
+          "ratingCount": 66
+        },
+        {
+          "date": "2026-09-07",
+          "rating": 4.806,
+          "ratingCount": 67
+        },
+        {
+          "date": "2026-09-22",
+          "rating": 4.814,
+          "ratingCount": 70
+        },
+        {
+          "date": "2026-09-28",
+          "rating": 4.757,
+          "ratingCount": 70
+        }
+      ]
+    },
+    {
+      "appId": "6741898680",
+      "app": "51Talk Adults (Arabic)",
+      "market": "UAE",
+      "store": "App Store",
+      "points": [
+        {
+          "date": "2026-09-03",
+          "rating": 4.685,
+          "ratingCount": 89
+        },
+        {
+          "date": "2026-09-07",
+          "rating": 4.689,
+          "ratingCount": 90
+        },
+        {
+          "date": "2026-09-22",
+          "rating": 4.699,
+          "ratingCount": 93
+        },
+        {
+          "date": "2026-09-28",
+          "rating": 4.691,
+          "ratingCount": 97
+        }
+      ]
+    }
+  ]
+}

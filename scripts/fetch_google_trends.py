@@ -107,13 +107,22 @@ def main():
                           f"reporting threshold, NOT proof of zero searches)", file=sys.stderr)
                     continue
                 series = [{"date": d.strftime("%Y-%m-%d"), "value": int(v)} for d, v in weekly.items()]
+                # Monthly-resampled series for the 6-month comparison chart (manager
+                # request 2026-09-28: extend the 4-week view to 6 months, Google-Trends
+                # style with every keyword/brand on one chart). Native-weekly points
+                # are averaged into calendar months; last 6 months kept.
+                monthly_s = weekly.resample("MS").mean().round().astype(int)
+                monthly = [{"month": d.strftime("%Y-%m"), "value": int(v)} for d, v in monthly_s.items()][-6:]
                 cur = series[-1]["value"]
                 prev = series[-2]["value"] if len(series) > 1 else None
                 peak = max(series, key=lambda x: x["value"])["date"]
                 entries.append({
                     "market": code, "keyword": kw,
                     "current": cur, "prevWeek": prev, "yoy": None,
-                    "peakDate": peak, "series": series[-4:],
+                    "peakDate": peak,
+                    "series": series[-4:],       # last 4 weeks — the WoW sparkline
+                    "series6m": series[-26:],    # ~6 months of native-weekly points — trend chart
+                    "seriesMonthly": monthly,    # last 6 calendar months (monthly mean) — comparison chart
                     "seriesGranularity": gran,
                     "timeframe": args.timeframe,
                     "weeksAvailable": len(series),

@@ -25,14 +25,33 @@ assets/               # css + vanilla-JS app (no dependencies)
 data/
   config.json         # markets, keywords, tracked apps, accounts, rules
   manifest.json       # ordered snapshot list; the app reads the latest + last 4
+  social-tracker.json # MONTHLY owned-social vs target, mirrored from the team's
+                      #   DingTalk "5.2 Yearly Target Tracker" (Section B headline)
+  appstore-history.json # dated iOS rating points → App Store 12-month trend (Section A)
+  website-traffic.json  # Section D — monthly web traffic (blocked on a source until connected)
   snapshots/<date>/
     meta.json         # collection period, capture date, data-quality log
     report.json       # conclusions, change explanation, risks
-    brand-voice.json  # search interest + app-store presence
-    social.json       # one record per owned account
+    brand-voice.json  # search interest (6-month series) + app-store presence
+    social.json       # one record per owned account (live public-count snapshot)
     reviews.json      # store ratings + representative reviews
 scripts/              # collection scripts (stdlib + a few optional deps)
 ```
+
+### The three top-level data files (not per-week)
+
+- **`social-tracker.json`** — the manager's "rely on their numbers" source. Section B's
+  headline is the team's own monthly tracker (Followers Increasing · Leads · Total Views ·
+  Ave. TikTok View, per channel, with per-month target attainment). KSA is populated;
+  KWT/UAE are empty templates (no market-specific accounts). Refresh with
+  `python scripts/fetch_dingtalk_tracker.py` (reads the DingTalk sheet via the `dws` CLI).
+- **`appstore-history.json`** — Apple exposes only the *current* aggregate rating, so this
+  file accumulates one dated point per capture and the 12-month view fills forward. Rebuild
+  with `python scripts/fetch_appstore_history.py --live` (seeds from snapshots + appends a
+  live point). A true 12-month backfill needs a paid ASO tool.
+- **`website-traffic.json`** — Section D scaffold. Renders a "needs a data source" blocker
+  until analytics access lands; then `python scripts/fetch_website_traffic.py --csv <export>`
+  fills the monthly rows.
 
 ## Design rules
 
@@ -56,8 +75,13 @@ These are enforced in the data and the rendering, not just documented:
 
 ```bash
 python scripts/new_week.py --date <mon> --week <ISO> --start <sun> --end <sat>
-# ... run the collectors ...
+# ... run the per-week collectors (appstore / googleplay / trends / social) ...
 python scripts/link_wow.py --date <mon>     # ALWAYS LAST — fills prev-week baselines
+
+# top-level (monthly / trend) data — refresh when the sources move:
+python scripts/fetch_dingtalk_tracker.py         # → data/social-tracker.json
+python scripts/fetch_appstore_history.py --live  # → data/appstore-history.json
+# python scripts/fetch_website_traffic.py --csv <export>  # once a source is connected
 
 git add data/ && git commit -m "W<nn> data" && git push
 ```
