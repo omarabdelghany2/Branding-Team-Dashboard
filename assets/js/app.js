@@ -475,46 +475,72 @@ function renderTracker() {
     <div class="tracker-controls">${toggle}
       <span class="chart-title">${esc(metric.label)} — monthly${metric.hasTarget ? " vs target" : ""}</span></div>
     ${chart}
-    ${tbl}`;
+    ${tbl}
+    <p class="chart-note">Showing all reported months (Jan–Jul). <strong>Aug & Sep are awaiting the monthly numbers</strong> — requested from the social team on 2026-10-04; they fill in here as soon as we receive them. Empty months show <em>awaiting</em>, never a fabricated 0%.</p>`;
 
   wrap.querySelectorAll(".seg button").forEach((btn) =>
     btn.addEventListener("click", () => { state.trackerMetric = btn.dataset.metric; renderTracker(); }));
 }
 
+// A month is "reported" if the team entered ANY number for it in ANY metric.
+// Unreported months (not yet filled — e.g. Aug/Sep) must NOT render as "0 / 0%":
+// that reads as "hit 0% of target" when the truth is "no data yet". The brief
+// forbids the fabricated zero, so these render as a 待确认/TBC gap instead.
+function monthReported(m) {
+  if (["followers", "leads", "views"].some((b) => CH_KEYS.some((c) => (m[b] || {})[c] != null))) return true;
+  return !!(m.avgTikTokView && m.avgTikTokView.value != null);
+}
+
 function trackerChannelTable(months12, yearly, metric) {
   const heads = ["Month", ...CH_KEYS.map((c) => CH_LABELS[c]), "Total",
     ...(metric.hasTarget ? ["Target", "Attain."] : [])];
-  const rowFor = (rec, label, isYear) => {
+  const rowFor = (rec, label, isYear, unreported) => {
     const blk = rec[metric.key] || {};
     const cells = [
       `<td class="${isYear ? "yr-cell" : ""}">${esc(label)}</td>`,
       ...CH_KEYS.map((c) => `<td class="num">${blk[c] == null ? "<span class='dash'>—</span>" : metric.fmt(blk[c])}</td>`),
-      `<td class="num total-cell">${blk.total == null ? "—" : metric.fmt(blk.total)}</td>`,
     ];
-    if (metric.hasTarget) {
-      cells.push(`<td class="num">${fmtNum(blk.target)}</td>`);
-      cells.push(`<td class="num pbar-cell">${pctBar(blk.pct)}</td>`);
+    if (unreported) {
+      cells.push(`<td class="total-cell">${gapBadge("awaiting")}</td>`);
+      if (metric.hasTarget) {
+        cells.push(`<td class="num">${fmtNum(blk.target)}</td>`);
+        cells.push(`<td class="num"><span class="dash">—</span></td>`);
+      }
+    } else {
+      cells.push(`<td class="num total-cell">${blk.total == null ? "—" : metric.fmt(blk.total)}</td>`);
+      if (metric.hasTarget) {
+        cells.push(`<td class="num">${fmtNum(blk.target)}</td>`);
+        cells.push(`<td class="num pbar-cell">${pctBar(blk.pct)}</td>`);
+      }
     }
     return cells;
   };
-  const rows = months12.map((m) => rowFor(m, "M" + m.month, false));
-  if (yearly) rows.push(rowFor(yearly, "Yearly", true));
+  const rows = months12.map((m) => rowFor(m, "M" + m.month, false, !monthReported(m)));
+  if (yearly) rows.push(rowFor(yearly, "Yearly", true, false));
   return table(heads, rows);
 }
 
 function trackerScalarTable(months12, yearly) {
   const heads = ["Month", "Ave. TikTok View", "Target", "Attain."];
-  const rowFor = (rec, label, isYear) => {
+  const rowFor = (rec, label, isYear, unreported) => {
     const a = rec.avgTikTokView || {};
+    if (unreported) {
+      return [
+        `<td class="${isYear ? "yr-cell" : ""}">${esc(label)}</td>`,
+        `<td class="total-cell">${gapBadge("awaiting")}</td>`,
+        `<td class="num">${fmtNum(a.target)}</td>`,
+        `<td class="num"><span class="dash">—</span></td>`,
+      ];
+    }
     return [
       `<td class="${isYear ? "yr-cell" : ""}">${esc(label)}</td>`,
       `<td class="num total-cell">${a.value == null ? "<span class='dash'>—</span>" : fmtNum(a.value)}</td>`,
       `<td class="num">${fmtNum(a.target)}</td>`,
-      `<td class="num pbar-cell">${pctBar(a.pct)}</td>`,
+      `<td class="num pbar-cell">${a.value == null ? "<span class='dash'>—</span>" : pctBar(a.pct)}</td>`,
     ];
   };
-  const rows = months12.map((m) => rowFor(m, "M" + m.month, false));
-  if (yearly) rows.push(rowFor(yearly, "Yearly", true));
+  const rows = months12.map((m) => rowFor(m, "M" + m.month, false, !monthReported(m)));
+  if (yearly) rows.push(rowFor(yearly, "Yearly", true, false));
   return table(heads, rows);
 }
 
