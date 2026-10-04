@@ -49,9 +49,12 @@ scripts/              # collection scripts (stdlib + a few optional deps)
   file accumulates one dated point per capture and the 12-month view fills forward. Rebuild
   with `python scripts/fetch_appstore_history.py --live` (seeds from snapshots + appends a
   live point). A true 12-month backfill needs a paid ASO tool.
-- **`website-traffic.json`** — Section D scaffold. Renders a "needs a data source" blocker
-  until analytics access lands; then `python scripts/fetch_website_traffic.py --csv <export>`
-  fills the monthly rows.
+- **`website-traffic.json`** — Section D. Built from a **GA4 "Reports snapshot" export**
+  via `python scripts/fetch_ga4_snapshot.py --csv <export.csv>` (GA4 property `304476779`):
+  summary KPIs, a monthly new-vs-returning trend, top traffic sources, top pages, and an
+  approximate KSA/KWT/UAE breakdown by city. Scope is the **global** 51talk.com site — a
+  precise per-market view needs a GA4 export filtered to each country. (The generic
+  `fetch_website_traffic.py --csv` still handles a plain canonical monthly CSV.)
 
 ## Design rules
 

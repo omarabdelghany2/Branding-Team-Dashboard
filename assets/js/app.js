@@ -736,36 +736,67 @@ function sentimentClass(s = "") {
   return "tag-note";
 }
 
-/* ---------- Section D · Website Traffic ---------- */
-const WEB_COLS = [
-  { key: "sessions", label: "Sessions" }, { key: "users", label: "Users" },
-  { key: "newUsers", label: "New users" }, { key: "pageviews", label: "Pageviews" },
-  { key: "avgEngagementTimeSec", label: "Avg engage (s)" }, { key: "bounceRate", label: "Bounce %" },
-  { key: "conversions", label: "Conversions" },
-];
-
+/* ---------- Section D · Website Traffic (GA4) ---------- */
 function renderSectionD() {
   const wrap = $("website-wrap");
   if (!wrap) return;
   const w = state.website;
-  if (!w) { wrap.innerHTML = emptyNote("website-traffic.json not found — run scripts/fetch_website_traffic.py."); return; }
+  if (!w) { wrap.innerHTML = emptyNote("website-traffic.json not found — run scripts/fetch_ga4_snapshot.py --csv <export>."); return; }
   const meta = w.meta || {};
-  const months = w.months || [];
 
-  // Live path — a source is connected and monthly rows exist.
-  if (meta.status === "live" && months.length) {
-    const totalSessions = months.reduce((s, m) => s + (Number(m.sessions) || 0), 0);
-    const series = [{ label: "Sessions", color: CHART_COLORS[1],
-      points: months.map((m) => ({ label: monthNum(m.month), value: m.sessions })) }];
-    const heads = ["Month", ...WEB_COLS.map((c) => c.label)];
-    const rows = months.map((m) => [
-      `<td>M${esc(m.month)}</td>`, ...WEB_COLS.map((c) => `<td class="num">${fmtNum(m[c.key])}</td>`),
-    ]);
-    wrap.innerHTML = `<div class="src-line">Source: ${esc(meta.source || "CSV import")} · ${esc((w.sites || []).join(", ") || "site TBC")} · captured ${esc(meta.capturedAt || "—")}</div>
-      <div class="kpi-row"><div class="kpi"><div class="k-label">Sessions · YTD</div>
-        <div class="k-value">${fmtCompact(totalSessions)}</div><div class="k-sub">${months.length} month(s)</div></div></div>
-      <div class="chart-title">Sessions — monthly</div>${lineChart(series, { valueFmt: fmtCompact })}
-      ${table(heads, rows)}`;
+  // Live path — GA4 snapshot parsed (summary present).
+  if (meta.status === "live" && w.summary) {
+    const s = w.summary, period = meta.period || {};
+
+    // Drop the trailing partial month from the TREND (period ends mid-month, so the
+    // last bucket is 1–few days and would crash the line) — show it as a note instead.
+    const months = w.monthly || [];
+    let full = months, partial = null;
+    const endM = (period.end || "").slice(0, 7), endDay = Number((period.end || "").slice(8, 10));
+    if (months.length && months[months.length - 1].month === endM && endDay < 28) {
+      full = months.slice(0, -1); partial = months[months.length - 1];
+    }
+    const trend = lineChart([
+      { label: "New users", color: CHART_COLORS[0], points: full.map((m) => ({ label: monthLabel(m.month), value: m.newUsers })) },
+      { label: "Returning", color: CHART_COLORS[1], points: full.map((m) => ({ label: monthLabel(m.month), value: m.returningUsers })) },
+    ], { valueFmt: fmtCompact });
+
+    const kpis = `<div class="kpi-row">
+      <div class="kpi"><div class="k-label">Active users</div><div class="k-value">${fmtCompact(s.activeUsers)}</div><div class="k-sub">${esc(period.start)} → ${esc(period.end)}</div></div>
+      <div class="kpi"><div class="k-label">New users</div><div class="k-value">${fmtCompact(s.newUsers)}</div><div class="k-sub">first-time visitors</div></div>
+      <div class="kpi"><div class="k-label">Avg engagement</div><div class="k-value">${esc(s.avgEngagementSec)}s</div><div class="k-sub">per active user</div></div>
+      <div class="kpi"><div class="k-label">Events</div><div class="k-value">${fmtCompact(s.eventCount)}</div><div class="k-sub">total interactions</div></div>
+    </div>`;
+
+    const me = (w.meMarkets || []).map((m) => `<div class="kpi"><div class="k-label">${esc(m.market)} · active users</div>
+      <div class="k-value">${fmtCompact(m.activeUsers)}</div>
+      <div class="k-sub">${(m.cities || []).slice(0, 3).map((c) => esc(c.city)).join(" · ") || "—"}</div></div>`).join("");
+
+    const totalSess = (w.channels || []).reduce((a, c) => a + (c.sessions || 0), 0) || 1;
+    const chTable = table(["Source / medium", "Sessions", "Share"],
+      (w.channels || []).map((c) => [`<td>${esc(c.source)}</td>`,
+        `<td class="num">${fmtNum(c.sessions)}</td>`,
+        `<td class="num pbar-cell">${pctBar(c.sessions / totalSess)}</td>`]));
+
+    const pgTable = table(["Page", "Views", "Active users", "Bounce"],
+      (w.topPages || []).map((p) => {
+        const name = p.page && p.page.length > 54 ? p.page.slice(0, 54) + "…" : (p.page || "—");
+        return [`<td title="${esc(p.page)}">${esc(name)}</td>`, `<td class="num">${fmtNum(p.views)}</td>`,
+          `<td class="num">${fmtNum(p.activeUsers)}</td>`, `<td class="num">${p.bounceRate == null ? "—" : Math.round(p.bounceRate * 100) + "%"}</td>`];
+      }));
+
+    wrap.innerHTML = `
+      <div class="src-line">Source: ${esc(meta.source)} · ${esc(meta.property)} · captured ${esc(meta.capturedAt)}</div>
+      <div class="blocker-lite" style="margin:10px 0;"><span class="tag tag-note">scope</span> ${esc(meta.scope)}</div>
+      ${kpis}
+      <h3 class="sub">Monthly trend — new vs returning users <span class="tag tag-note">full months</span></h3>
+      ${trend}
+      ${partial ? `<p class="chart-note">${monthLabel(partial.month)} is partial (through ${esc(period.end)}): ${fmtNum(partial.activeUsers)} active users so far — excluded from the trend line.</p>` : ""}
+      <h3 class="sub">Our markets <span class="tag tag-gap">approximate · by city</span></h3>
+      <div class="kpi-row">${me || emptyNote("No ME cities matched.")}</div>
+      <h3 class="sub">Top traffic sources <span class="tag tag-note">session source / medium</span></h3>
+      ${chTable}
+      <details class="detail-block"><summary>Top pages <span class="tag tag-note">by views</span></summary>${pgTable}</details>`;
     return;
   }
 

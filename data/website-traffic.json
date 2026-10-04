@@ -1,33 +1,287 @@
 {
   "meta": {
     "section": "D. Website traffic / 官网流量",
-    "status": "blocked-need-source",
-    "capturedAt": "2026-09-28",
-    "note": "New module requested by the manager (2026-09-28) to watch current website traffic performance. No analytics access yet — this section is ready to fill the moment a source is connected. Never fabricate traffic numbers; a missing value stays a TBC gap.",
-    "window": "monthly (align to the social tracker's 12-month grid)",
+    "status": "live",
+    "source": "GA4 · Reports snapshot export",
+    "property": "51Talk Website (GA4 property 304476779)",
+    "scope": "GLOBAL site (51talk.com). ME markets below are broken out by CITY and are APPROXIMATE — a precise per-market view needs a GA4 export filtered to KSA/KWT/UAE.",
+    "period": {
+      "start": "2026-01-01",
+      "end": "2026-10-03"
+    },
+    "capturedAt": "2026-10-04",
+    "note": "Whole-period aggregates + a monthly trend built from GA4's daily new/returning series. Channels = session source/medium. Never fabricated — only what the export contains.",
     "metrics": [
-      "sessions",
-      "users",
+      "activeUsers",
       "newUsers",
-      "pageviews",
-      "avgEngagementTimeSec",
-      "bounceRate",
-      "conversions"
-    ],
-    "blocker": {
-      "issue": "No web-analytics access for the 51Talk ME site(s).",
-      "needs": "One of: GA4 property + API/service-account access · a SimilarWeb / Semrush export · a monthly CSV from whoever owns web analytics.",
-      "owner": "Patrick / Web team / Omar",
-      "questionsForManager": [
-        "Which site(s) should we track — 51talk.com/ar, a KSA landing page, campaign LPs?",
-        "Which analytics tool do we have access to — GA4, Adobe Analytics, SimilarWeb, Semrush?",
-        "Who can grant read access, or provide a monthly export?"
-      ],
-      "ready": "As soon as a source is confirmed, scripts/fetch_website_traffic.py --csv <export> writes the monthly rows here and the section renders."
-    }
+      "returningUsers"
+    ]
   },
-  "sites": [],
-  "months": [],
-  "topChannels": [],
-  "topPages": []
+  "summary": {
+    "activeUsers": 498180,
+    "newUsers": 499581,
+    "avgEngagementSec": 46.9,
+    "eventCount": 5117491
+  },
+  "monthly": [
+    {
+      "month": "2026-01",
+      "newUsers": 58326,
+      "returningUsers": 10666,
+      "activeUsers": 68992
+    },
+    {
+      "month": "2026-02",
+      "newUsers": 37578,
+      "returningUsers": 7749,
+      "activeUsers": 45327
+    },
+    {
+      "month": "2026-03",
+      "newUsers": 48861,
+      "returningUsers": 8199,
+      "activeUsers": 57060
+    },
+    {
+      "month": "2026-04",
+      "newUsers": 54800,
+      "returningUsers": 8722,
+      "activeUsers": 63522
+    },
+    {
+      "month": "2026-05",
+      "newUsers": 48271,
+      "returningUsers": 8563,
+      "activeUsers": 56834
+    },
+    {
+      "month": "2026-06",
+      "newUsers": 56511,
+      "returningUsers": 9507,
+      "activeUsers": 66018
+    },
+    {
+      "month": "2026-07",
+      "newUsers": 62673,
+      "returningUsers": 10919,
+      "activeUsers": 73592
+    },
+    {
+      "month": "2026-08",
+      "newUsers": 58451,
+      "returningUsers": 9601,
+      "activeUsers": 68052
+    },
+    {
+      "month": "2026-09",
+      "newUsers": 65068,
+      "returningUsers": 10551,
+      "activeUsers": 75619
+    },
+    {
+      "month": "2026-10",
+      "newUsers": 6716,
+      "returningUsers": 1082,
+      "activeUsers": 7798
+    }
+  ],
+  "channels": [
+    {
+      "source": "(direct) / (none)",
+      "sessions": 395340
+    },
+    {
+      "source": "google / organic",
+      "sessions": 131192
+    },
+    {
+      "source": "google / cpc",
+      "sessions": 41449
+    },
+    {
+      "source": "bing / organic",
+      "sessions": 16313
+    },
+    {
+      "source": "l.wl.co / referral",
+      "sessions": 14334
+    },
+    {
+      "source": "ig / paid",
+      "sessions": 6641
+    },
+    {
+      "source": "l.facebook.com / referral",
+      "sessions": 5610
+    },
+    {
+      "source": "m.facebook.com / referral",
+      "sessions": 5321
+    },
+    {
+      "source": "facebook.com / referral",
+      "sessions": 3380
+    },
+    {
+      "source": "chatgpt.com / ai-assistant",
+      "sessions": 2592
+    }
+  ],
+  "meMarkets": [
+    {
+      "market": "KSA",
+      "activeUsers": 195365,
+      "cities": [
+        {
+          "city": "Jeddah",
+          "activeUsers": 67470
+        },
+        {
+          "city": "Riyadh",
+          "activeUsers": 62131
+        },
+        {
+          "city": "Dammam",
+          "activeUsers": 24682
+        },
+        {
+          "city": "Madinah",
+          "activeUsers": 16746
+        },
+        {
+          "city": "Abha",
+          "activeUsers": 5781
+        },
+        {
+          "city": "Buraydah",
+          "activeUsers": 4822
+        }
+      ]
+    },
+    {
+      "market": "UAE",
+      "activeUsers": 10723,
+      "cities": [
+        {
+          "city": "Abu Dhabi",
+          "activeUsers": 3412
+        },
+        {
+          "city": "Dubai",
+          "activeUsers": 2413
+        },
+        {
+          "city": "Sharjah",
+          "activeUsers": 2212
+        },
+        {
+          "city": "Al Ain",
+          "activeUsers": 1125
+        },
+        {
+          "city": "Ajman",
+          "activeUsers": 940
+        },
+        {
+          "city": "Ras Al-Khaimah",
+          "activeUsers": 448
+        }
+      ]
+    },
+    {
+      "market": "KWT",
+      "activeUsers": 6523,
+      "cities": [
+        {
+          "city": "Salmiya",
+          "activeUsers": 3771
+        },
+        {
+          "city": "Al Farwaniyah",
+          "activeUsers": 1166
+        },
+        {
+          "city": "Kuwait City",
+          "activeUsers": 707
+        },
+        {
+          "city": "Mangaf",
+          "activeUsers": 457
+        },
+        {
+          "city": "Al Jahra",
+          "activeUsers": 284
+        },
+        {
+          "city": "Al Ahmadi",
+          "activeUsers": 138
+        }
+      ]
+    }
+  ],
+  "topPages": [
+    {
+      "page": "51talk",
+      "views": 150436,
+      "activeUsers": 74311,
+      "bounceRate": 0.084
+    },
+    {
+      "page": "Home -",
+      "views": 131220,
+      "activeUsers": 87166,
+      "bounceRate": 0.545
+    },
+    {
+      "page": "منصة عالمية لتعلم اللغة الإنجليزية عن بعد｜شبكة تعلم اللغة الإنجليزية للشباب – فايف ون توك -",
+      "views": 123671,
+      "activeUsers": 80854,
+      "bounceRate": 0.351
+    },
+    {
+      "page": "تعلم الإنجليزية عبر الإنترنت مع 51Talk وبرنامج Air Class -",
+      "views": 94039,
+      "activeUsers": 64880,
+      "bounceRate": 0.305
+    },
+    {
+      "page": "هناك أكثر من 20000 معلم أجنبي مختصين من أمريكا -",
+      "views": 77093,
+      "activeUsers": 54259,
+      "bounceRate": 0.356
+    },
+    {
+      "page": "Page not found",
+      "views": 63630,
+      "activeUsers": 33898,
+      "bounceRate": 0.557
+    },
+    {
+      "page": "51Talk is a global online English learning platform for teenagers.",
+      "views": 36287,
+      "activeUsers": 25189,
+      "bounceRate": 0.629
+    },
+    {
+      "page": "全球最大英語線上學習平台｜青少兒英文學習網 - 51Talk",
+      "views": 20224,
+      "activeUsers": 14689,
+      "bounceRate": 0.357
+    },
+    {
+      "page": "منصة عالمية لتعلم اللغة الإنجليزية عن بعد｜شبكة تعلم اللغة الإنجليزية للشباب - فايف ون توك -",
+      "views": 18288,
+      "activeUsers": 11911,
+      "bounceRate": 0.371
+    },
+    {
+      "page": "มีครูต่างชาติคุณภาพสูงกว่า 20,000 ท่าน",
+      "views": 16178,
+      "activeUsers": 11535,
+      "bounceRate": 0.537
+    }
+  ],
+  "sites": [
+    "51talk.com (global)"
+  ]
 }
