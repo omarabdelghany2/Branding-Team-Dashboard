@@ -1,0 +1,751 @@
+{
+  "section": "A. Brand voice & competitor monitoring / 品牌声量与竞品监测",
+  "googleTrends": {
+    "source": "Google Trends (RELATIVE index 0-100, not absolute volume)",
+    "capturedAt": "2026-10-04",
+    "keyword": "51Talk, فايف ون توك",
+    "note": "RELATIVE index 0–100, never absolute volume. Keywords are fetched in ONE payload per market, so they are comparable TO EACH OTHER within a market — but NOT across markets and NOT across snapshots (Trends re-normalises every request). Partial weeks dropped.",
+    "entries": [
+      {
+        "market": "KSA",
+        "keyword": "51Talk",
+        "current": 53,
+        "prevWeek": 56,
+        "yoy": null,
+        "peakDate": "2026-08-16",
+        "series": [
+          {
+            "date": "2026-09-06",
+            "value": 71
+          },
+          {
+            "date": "2026-09-13",
+            "value": 41
+          },
+          {
+            "date": "2026-09-20",
+            "value": 56
+          },
+          {
+            "date": "2026-09-27",
+            "value": 53
+          }
+        ],
+        "series6m": [
+          {
+            "date": "2026-04-05",
+            "value": 36
+          },
+          {
+            "date": "2026-04-12",
+            "value": 57
+          },
+          {
+            "date": "2026-04-19",
+            "value": 37
+          },
+          {
+            "date": "2026-04-26",
+            "value": 42
+          },
+          {
+            "date": "2026-05-03",
+            "value": 56
+          },
+          {
+            "date": "2026-05-10",
+            "value": 31
+          },
+          {
+            "date": "2026-05-17",
+            "value": 60
+          },
+          {
+            "date": "2026-05-24",
+            "value": 39
+          },
+          {
+            "date": "2026-05-31",
+            "value": 60
+          },
+          {
+            "date": "2026-06-07",
+            "value": 46
+          },
+          {
+            "date": "2026-06-14",
+            "value": 62
+          },
+          {
+            "date": "2026-06-21",
+            "value": 50
+          },
+          {
+            "date": "2026-06-28",
+            "value": 96
+          },
+          {
+            "date": "2026-07-05",
+            "value": 77
+          },
+          {
+            "date": "2026-07-12",
+            "value": 82
+          },
+          {
+            "date": "2026-07-19",
+            "value": 92
+          },
+          {
+            "date": "2026-07-26",
+            "value": 75
+          },
+          {
+            "date": "2026-08-02",
+            "value": 96
+          },
+          {
+            "date": "2026-08-09",
+            "value": 66
+          },
+          {
+            "date": "2026-08-16",
+            "value": 100
+          },
+          {
+            "date": "2026-08-23",
+            "value": 85
+          },
+          {
+            "date": "2026-08-30",
+            "value": 78
+          },
+          {
+            "date": "2026-09-06",
+            "value": 71
+          },
+          {
+            "date": "2026-09-13",
+            "value": 41
+          },
+          {
+            "date": "2026-09-20",
+            "value": 56
+          },
+          {
+            "date": "2026-09-27",
+            "value": 53
+          }
+        ],
+        "seriesMonthly": [
+          {
+            "month": "2026-04",
+            "value": 43
+          },
+          {
+            "month": "2026-05",
+            "value": 49
+          },
+          {
+            "month": "2026-06",
+            "value": 64
+          },
+          {
+            "month": "2026-07",
+            "value": 82
+          },
+          {
+            "month": "2026-08",
+            "value": 85
+          },
+          {
+            "month": "2026-09",
+            "value": 55
+          }
+        ],
+        "seriesGranularity": "native weekly",
+        "timeframe": "today 12-m",
+        "weeksAvailable": 53,
+        "comparableWith": [
+          "فايف ون توك"
+        ]
+      },
+      {
+        "market": "KSA",
+        "keyword": "فايف ون توك",
+        "current": 29,
+        "prevWeek": 27,
+        "yoy": null,
+        "peakDate": "2025-10-26",
+        "series": [
+          {
+            "date": "2026-09-06",
+            "value": 29
+          },
+          {
+            "date": "2026-09-13",
+            "value": 44
+          },
+          {
+            "date": "2026-09-20",
+            "value": 27
+          },
+          {
+            "date": "2026-09-27",
+            "value": 29
+          }
+        ],
+        "series6m": [
+          {
+            "date": "2026-04-05",
+            "value": 34
+          },
+          {
+            "date": "2026-04-12",
+            "value": 0
+          },
+          {
+            "date": "2026-04-19",
+            "value": 0
+          },
+          {
+            "date": "2026-04-26",
+            "value": 0
+          },
+          {
+            "date": "2026-05-03",
+            "value": 0
+          },
+          {
+            "date": "2026-05-10",
+            "value": 0
+          },
+          {
+            "date": "2026-05-17",
+            "value": 35
+          },
+          {
+            "date": "2026-05-24",
+            "value": 0
+          },
+          {
+            "date": "2026-05-31",
+            "value": 0
+          },
+          {
+            "date": "2026-06-07",
+            "value": 0
+          },
+          {
+            "date": "2026-06-14",
+            "value": 35
+          },
+          {
+            "date": "2026-06-21",
+            "value": 31
+          },
+          {
+            "date": "2026-06-28",
+            "value": 52
+          },
+          {
+            "date": "2026-07-05",
+            "value": 36
+          },
+          {
+            "date": "2026-07-12",
+            "value": 42
+          },
+          {
+            "date": "2026-07-19",
+            "value": 0
+          },
+          {
+            "date": "2026-07-26",
+            "value": 33
+          },
+          {
+            "date": "2026-08-02",
+            "value": 0
+          },
+          {
+            "date": "2026-08-09",
+            "value": 35
+          },
+          {
+            "date": "2026-08-16",
+            "value": 41
+          },
+          {
+            "date": "2026-08-23",
+            "value": 48
+          },
+          {
+            "date": "2026-08-30",
+            "value": 30
+          },
+          {
+            "date": "2026-09-06",
+            "value": 29
+          },
+          {
+            "date": "2026-09-13",
+            "value": 44
+          },
+          {
+            "date": "2026-09-20",
+            "value": 27
+          },
+          {
+            "date": "2026-09-27",
+            "value": 29
+          }
+        ],
+        "seriesMonthly": [
+          {
+            "month": "2026-04",
+            "value": 8
+          },
+          {
+            "month": "2026-05",
+            "value": 7
+          },
+          {
+            "month": "2026-06",
+            "value": 30
+          },
+          {
+            "month": "2026-07",
+            "value": 28
+          },
+          {
+            "month": "2026-08",
+            "value": 31
+          },
+          {
+            "month": "2026-09",
+            "value": 32
+          }
+        ],
+        "seriesGranularity": "native weekly",
+        "timeframe": "today 12-m",
+        "weeksAvailable": 53,
+        "comparableWith": [
+          "51Talk"
+        ]
+      },
+      {
+        "market": "KWT",
+        "keyword": "51Talk",
+        "current": 8,
+        "prevWeek": 0,
+        "yoy": null,
+        "peakDate": "2026-04-05",
+        "series": [
+          {
+            "date": "2026-09-06",
+            "value": 0
+          },
+          {
+            "date": "2026-09-13",
+            "value": 0
+          },
+          {
+            "date": "2026-09-20",
+            "value": 0
+          },
+          {
+            "date": "2026-09-27",
+            "value": 8
+          }
+        ],
+        "series6m": [
+          {
+            "date": "2026-04-05",
+            "value": 100
+          },
+          {
+            "date": "2026-04-12",
+            "value": 0
+          },
+          {
+            "date": "2026-04-19",
+            "value": 0
+          },
+          {
+            "date": "2026-04-26",
+            "value": 0
+          },
+          {
+            "date": "2026-05-03",
+            "value": 0
+          },
+          {
+            "date": "2026-05-10",
+            "value": 0
+          },
+          {
+            "date": "2026-05-17",
+            "value": 0
+          },
+          {
+            "date": "2026-05-24",
+            "value": 0
+          },
+          {
+            "date": "2026-05-31",
+            "value": 0
+          },
+          {
+            "date": "2026-06-07",
+            "value": 0
+          },
+          {
+            "date": "2026-06-14",
+            "value": 0
+          },
+          {
+            "date": "2026-06-21",
+            "value": 0
+          },
+          {
+            "date": "2026-06-28",
+            "value": 0
+          },
+          {
+            "date": "2026-07-05",
+            "value": 0
+          },
+          {
+            "date": "2026-07-12",
+            "value": 0
+          },
+          {
+            "date": "2026-07-19",
+            "value": 0
+          },
+          {
+            "date": "2026-07-26",
+            "value": 0
+          },
+          {
+            "date": "2026-08-02",
+            "value": 0
+          },
+          {
+            "date": "2026-08-09",
+            "value": 0
+          },
+          {
+            "date": "2026-08-16",
+            "value": 0
+          },
+          {
+            "date": "2026-08-23",
+            "value": 0
+          },
+          {
+            "date": "2026-08-30",
+            "value": 0
+          },
+          {
+            "date": "2026-09-06",
+            "value": 0
+          },
+          {
+            "date": "2026-09-13",
+            "value": 0
+          },
+          {
+            "date": "2026-09-20",
+            "value": 0
+          },
+          {
+            "date": "2026-09-27",
+            "value": 8
+          }
+        ],
+        "seriesMonthly": [
+          {
+            "month": "2026-04",
+            "value": 25
+          },
+          {
+            "month": "2026-05",
+            "value": 0
+          },
+          {
+            "month": "2026-06",
+            "value": 0
+          },
+          {
+            "month": "2026-07",
+            "value": 0
+          },
+          {
+            "month": "2026-08",
+            "value": 0
+          },
+          {
+            "month": "2026-09",
+            "value": 2
+          }
+        ],
+        "seriesGranularity": "native weekly",
+        "timeframe": "today 12-m",
+        "weeksAvailable": 53,
+        "comparableWith": [
+          "فايف ون توك"
+        ]
+      },
+      {
+        "market": "UAE",
+        "keyword": "51Talk",
+        "current": 69,
+        "prevWeek": 100,
+        "yoy": null,
+        "peakDate": "2026-09-20",
+        "series": [
+          {
+            "date": "2026-09-06",
+            "value": 0
+          },
+          {
+            "date": "2026-09-13",
+            "value": 0
+          },
+          {
+            "date": "2026-09-20",
+            "value": 100
+          },
+          {
+            "date": "2026-09-27",
+            "value": 69
+          }
+        ],
+        "series6m": [
+          {
+            "date": "2026-04-05",
+            "value": 0
+          },
+          {
+            "date": "2026-04-12",
+            "value": 0
+          },
+          {
+            "date": "2026-04-19",
+            "value": 0
+          },
+          {
+            "date": "2026-04-26",
+            "value": 0
+          },
+          {
+            "date": "2026-05-03",
+            "value": 0
+          },
+          {
+            "date": "2026-05-10",
+            "value": 0
+          },
+          {
+            "date": "2026-05-17",
+            "value": 0
+          },
+          {
+            "date": "2026-05-24",
+            "value": 0
+          },
+          {
+            "date": "2026-05-31",
+            "value": 0
+          },
+          {
+            "date": "2026-06-07",
+            "value": 0
+          },
+          {
+            "date": "2026-06-14",
+            "value": 0
+          },
+          {
+            "date": "2026-06-21",
+            "value": 0
+          },
+          {
+            "date": "2026-06-28",
+            "value": 0
+          },
+          {
+            "date": "2026-07-05",
+            "value": 0
+          },
+          {
+            "date": "2026-07-12",
+            "value": 0
+          },
+          {
+            "date": "2026-07-19",
+            "value": 0
+          },
+          {
+            "date": "2026-07-26",
+            "value": 0
+          },
+          {
+            "date": "2026-08-02",
+            "value": 0
+          },
+          {
+            "date": "2026-08-09",
+            "value": 0
+          },
+          {
+            "date": "2026-08-16",
+            "value": 0
+          },
+          {
+            "date": "2026-08-23",
+            "value": 0
+          },
+          {
+            "date": "2026-08-30",
+            "value": 0
+          },
+          {
+            "date": "2026-09-06",
+            "value": 0
+          },
+          {
+            "date": "2026-09-13",
+            "value": 0
+          },
+          {
+            "date": "2026-09-20",
+            "value": 100
+          },
+          {
+            "date": "2026-09-27",
+            "value": 69
+          }
+        ],
+        "seriesMonthly": [
+          {
+            "month": "2026-04",
+            "value": 0
+          },
+          {
+            "month": "2026-05",
+            "value": 0
+          },
+          {
+            "month": "2026-06",
+            "value": 0
+          },
+          {
+            "month": "2026-07",
+            "value": 0
+          },
+          {
+            "month": "2026-08",
+            "value": 0
+          },
+          {
+            "month": "2026-09",
+            "value": 42
+          }
+        ],
+        "seriesGranularity": "native weekly",
+        "timeframe": "today 12-m",
+        "weeksAvailable": 53,
+        "comparableWith": [
+          "فايف ون توك"
+        ]
+      }
+    ],
+    "keywords": [
+      "51Talk",
+      "فايف ون توك"
+    ],
+    "timeframe": "today 12-m"
+  },
+  "appStore": {
+    "source": "iTunes Lookup API (public)",
+    "capturedAt": "2026-10-04",
+    "note": "Run scripts/fetch_appstore.py once the iOS appId is confirmed. Each entry: { market, rank, rating, ratingCount, version, versionDate, prevRating, prevRatingCount }. Mark rank as a gap if not stably obtainable.",
+    "entries": [
+      {
+        "market": "KSA",
+        "app": "51Talk (English)",
+        "appId": "1585144932",
+        "rating": 4.27167,
+        "ratingCount": 14698,
+        "version": "6.6.9",
+        "versionDate": "2026-09-28",
+        "rank": null,
+        "prevRating": 4.28958,
+        "prevRatingCount": 14445
+      },
+      {
+        "market": "KWT",
+        "app": "51Talk (English)",
+        "appId": "1585144932",
+        "rating": 4.12655,
+        "ratingCount": 482,
+        "version": "6.6.9",
+        "versionDate": "2026-09-28",
+        "rank": null,
+        "prevRating": 4.13375,
+        "prevRatingCount": 471
+      },
+      {
+        "market": "UAE",
+        "app": "51Talk (English)",
+        "appId": "1585144932",
+        "rating": 4.35839,
+        "ratingCount": 399,
+        "version": "6.6.9",
+        "versionDate": "2026-09-28",
+        "rank": null,
+        "prevRating": 4.36896,
+        "prevRatingCount": 393
+      },
+      {
+        "market": "KSA",
+        "app": "51Talk Adults (Arabic)",
+        "appId": "6741898680",
+        "rating": 4.59364,
+        "ratingCount": 3743,
+        "version": "1.2.17",
+        "versionDate": "2026-09-24",
+        "rank": null,
+        "prevRating": 4.59978,
+        "prevRatingCount": 3663
+      },
+      {
+        "market": "KWT",
+        "app": "51Talk Adults (Arabic)",
+        "appId": "6741898680",
+        "rating": 4.76389,
+        "ratingCount": 72,
+        "version": "1.2.17",
+        "versionDate": "2026-09-24",
+        "rank": null,
+        "prevRating": 4.81429,
+        "prevRatingCount": 70
+      },
+      {
+        "market": "UAE",
+        "app": "51Talk Adults (Arabic)",
+        "appId": "6741898680",
+        "rating": 4.69388,
+        "ratingCount": 98,
+        "version": "1.2.17",
+        "versionDate": "2026-09-24",
+        "rank": null,
+        "prevRating": 4.69892,
+        "prevRatingCount": 93
+      }
+    ]
+  }
+}

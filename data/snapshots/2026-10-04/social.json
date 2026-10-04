@@ -1,0 +1,6 @@
+{
+  "section": "B. 51Talk owned social media / 51Talk 自有社媒数据看板",
+  "note": "One record per account. Roll up: country → platform → account (never sum incompatible scopes). KPIs: net follower growth (core) + TikTok avg video views (best-effort). Fields per brief §3B.",
+  "status": "9/11 accounts have follower data. All accounts are REGIONAL (KSA-branded, serving KSA/KWT/UAE) — no market-specific Kuwait/UAE handles exist.",
+  "accounts": []
+}

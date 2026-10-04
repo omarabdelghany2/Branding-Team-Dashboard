@@ -1,0 +1,23 @@
+{
+  "captureDate": "2026-10-04",
+  "weekLabel": "2026-W40",
+  "collectionPeriod": {
+    "start": "2026-09-27",
+    "end": "2026-10-03"
+  },
+  "isBaseline": false,
+  "dataQuality": [
+    {
+      "issue": "Live social follower counts not refreshed for W40 (need browser-capture of public profiles) — last captured 2026-09-23.",
+      "impact": "Section B live-account snapshot is empty this week; the monthly Target Tracker (headline) is current. No stale counts shown as current.",
+      "status": "pending-capture",
+      "owner": "Omar"
+    },
+    {
+      "issue": "YouTube subs/views not refreshed (no API key in secrets.local.json).",
+      "impact": "YouTube row absent from the live snapshot this week.",
+      "status": "pending-key",
+      "owner": "Omar"
+    }
+  ]
+}

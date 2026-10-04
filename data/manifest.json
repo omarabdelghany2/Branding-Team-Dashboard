@@ -20,6 +20,11 @@
       "date": "2026-09-22",
       "weekLabel": "2026-W39",
       "isBaseline": false
+    },
+    {
+      "date": "2026-10-04",
+      "weekLabel": "2026-W40",
+      "isBaseline": false
     }
   ]
 }

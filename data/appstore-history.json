@@ -2,7 +2,7 @@
   "meta": {
     "source": "iTunes Lookup API (current aggregate) + our weekly captures",
     "window": "12-month rolling",
-    "capturedAt": "2026-09-28",
+    "capturedAt": "2026-10-04",
     "note": "Apple exposes only the CURRENT aggregate rating — no public history. This file accumulates one dated point per capture, so the rolling view fills forward from our first snapshot. Full 12-month backfill needs a paid ASO history source.",
     "backfillBlocked": true,
     "backfillNeeds": "Paid ASO tool (AppFollow / Sensor Tower / AppTweak) for historical ratings",
@@ -31,9 +31,9 @@
           "ratingCount": 14445
         },
         {
-          "date": "2026-09-28",
-          "rating": 4.28,
-          "ratingCount": 14594
+          "date": "2026-10-04",
+          "rating": 4.272,
+          "ratingCount": 14698
         }
       ]
     },
@@ -59,9 +59,9 @@
           "ratingCount": 471
         },
         {
-          "date": "2026-09-28",
-          "rating": 4.128,
-          "ratingCount": 477
+          "date": "2026-10-04",
+          "rating": 4.127,
+          "ratingCount": 482
         }
       ]
     },
@@ -87,9 +87,9 @@
           "ratingCount": 393
         },
         {
-          "date": "2026-09-28",
-          "rating": 4.365,
-          "ratingCount": 397
+          "date": "2026-10-04",
+          "rating": 4.358,
+          "ratingCount": 399
         }
       ]
     },
@@ -115,9 +115,9 @@
           "ratingCount": 3663
         },
         {
-          "date": "2026-09-28",
-          "rating": 4.597,
-          "ratingCount": 3696
+          "date": "2026-10-04",
+          "rating": 4.594,
+          "ratingCount": 3743
         }
       ]
     },
@@ -143,9 +143,9 @@
           "ratingCount": 70
         },
         {
-          "date": "2026-09-28",
-          "rating": 4.757,
-          "ratingCount": 70
+          "date": "2026-10-04",
+          "rating": 4.764,
+          "ratingCount": 72
         }
       ]
     },
@@ -171,9 +171,9 @@
           "ratingCount": 93
         },
         {
-          "date": "2026-09-28",
-          "rating": 4.691,
-          "ratingCount": 97
+          "date": "2026-10-04",
+          "rating": 4.694,
+          "ratingCount": 98
         }
       ]
     }
