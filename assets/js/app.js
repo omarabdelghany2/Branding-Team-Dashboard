@@ -778,6 +778,13 @@ function renderSectionD() {
         `<td class="num">${fmtNum(c.sessions)}</td>`,
         `<td class="num pbar-cell">${pctBar(c.sessions / totalSess)}</td>`]));
 
+    // How NEW users first discovered us (acquisition) — first user source / medium.
+    const totalFus = (w.firstUserSources || []).reduce((a, c) => a + (c.activeUsers || 0), 0) || 1;
+    const fusTable = table(["First source / medium", "New users", "Share"],
+      (w.firstUserSources || []).map((c) => [`<td>${esc(c.source)}</td>`,
+        `<td class="num">${fmtNum(c.activeUsers)}</td>`,
+        `<td class="num pbar-cell">${pctBar(c.activeUsers / totalFus)}</td>`]));
+
     const pgTable = table(["Page", "Views", "Active users", "Bounce"],
       (w.topPages || []).map((p) => {
         const name = p.page && p.page.length > 54 ? p.page.slice(0, 54) + "…" : (p.page || "—");
@@ -796,6 +803,8 @@ function renderSectionD() {
       <div class="kpi-row">${me || emptyNote("No ME cities matched.")}</div>
       <h3 class="sub">Top traffic sources <span class="tag tag-note">session source / medium</span></h3>
       ${chTable}
+      <h3 class="sub">How new users first found us <span class="tag tag-note">first user source · acquisition</span></h3>
+      ${fusTable}
       <details class="detail-block"><summary>Top pages <span class="tag tag-note">by views</span></summary>${pgTable}</details>`;
     return;
   }

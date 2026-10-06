@@ -127,6 +127,48 @@
       "sessions": 2592
     }
   ],
+  "firstUserSources": [
+    {
+      "source": "(direct) / (none)",
+      "activeUsers": 321739
+    },
+    {
+      "source": "google / organic",
+      "activeUsers": 88963
+    },
+    {
+      "source": "google / cpc",
+      "activeUsers": 32334
+    },
+    {
+      "source": "bing / organic",
+      "activeUsers": 10698
+    },
+    {
+      "source": "l.wl.co / referral",
+      "activeUsers": 10463
+    },
+    {
+      "source": "ig / paid",
+      "activeUsers": 6507
+    },
+    {
+      "source": "l.facebook.com / referral",
+      "activeUsers": 5485
+    },
+    {
+      "source": "m.facebook.com / referral",
+      "activeUsers": 5271
+    },
+    {
+      "source": "facebook.com / referral",
+      "activeUsers": 3401
+    },
+    {
+      "source": "chatgpt.com / ai-assistant",
+      "activeUsers": 2151
+    }
+  ],
   "meMarkets": [
     {
       "market": "KSA",

@@ -139,9 +139,13 @@ def main():
         b["activeUsers"] = b["newUsers"] + b["returningUsers"]
         monthly.append(b)
 
-    # --- channels: Session source / medium ---
+    # --- channels: Session source / medium (per-session) ---
     _, ss = find(sec, "Session source / medium,Sessions")
     channels = [{"source": r[0], "sessions": num(r[1])} for r in ss if len(r) >= 2][:args.top]
+
+    # --- first user source / medium (how NEW users FIRST discovered us — acquisition) ---
+    _, fus = find(sec, "First user source / medium,Active users")
+    firstUserSources = [{"source": r[0], "activeUsers": num(r[1])} for r in fus if len(r) >= 2][:args.top]
 
     # --- top pages ---
     _, pg = find(sec, "Page title and screen class,Views")
@@ -180,6 +184,7 @@ def main():
         "summary": summary,
         "monthly": monthly,
         "channels": channels,
+        "firstUserSources": firstUserSources,
         "meMarkets": meMarkets,
         "topPages": topPages,
         "sites": ["51talk.com (global)"],
