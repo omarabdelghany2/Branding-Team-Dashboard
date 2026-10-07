@@ -1,9 +1,22 @@
 {
-  "conclusions": [],
+  "conclusions": [
+    { "text": "Website Traffic is now live on the board (GA4 connected): ~498K active users year-to-date with a steady monthly trend. Saudi Arabia is our dominant market (~195K users), far ahead of UAE (~11K) and Kuwait (~6.5K)." },
+    { "text": "Most website traffic is direct + Google organic search; paid social (Instagram/Facebook) is a smaller share — we rely heavily on brand/direct and SEO, with room to grow paid-social-driven site traffic." },
+    { "text": "Owned-social net follower growth is 85,385 Jan–Jul = ~30% of the annual target — behind pace, worth a focused growth push. App Store ratings are stable (~4.3 English, ~4.6 Arabic) and now shown as a 12-month trend." },
+    { "text": "Brand search interest for 51Talk is strongest in Saudi Arabia; Kuwait and UAE are sparse — consistent with the website market split." }
+  ],
   "changeExplanation": {
-    "verified": [],
-    "hypotheses": []
+    "verified": [
+      { "observation": "Website traffic is now visible on the dashboard", "cause": "GA4 access granted (via Fei) and wired into Section D — summary, monthly trend, sources, acquisition, and markets by city." },
+      { "observation": "The whole board is current to this week (W40)", "cause": "Refreshed App Store ratings, Google Play, Google Trends, and the 12-month rating trend." }
+    ],
+    "hypotheses": [
+      { "observation": "Paid social is a small share of website traffic", "hypothesis": "Paid campaigns may be driving app installs / in-app actions rather than website visits — to verify against the ad-platform and app-store data." }
+    ]
   },
-  "risks": [],
-  "notes": "Week 2026-W40. Compare vs 2026-09-22. Keep order: Conclusions → Data → Explanation → Risks → Quality."
+  "risks": [
+    { "problem": "Owned follower growth at ~30% of the annual target (YTD)", "impact": "Annual growth KPI at risk", "probability": "Medium", "owner": "Omar / Norah", "nextStep": "Get Aug/Sep numbers in, then agree a growth plan", "deadline": "Next weekly" },
+    { "problem": "August & September social numbers missing from the team tracker", "impact": "Incomplete monthly picture for the last two months", "probability": "High", "owner": "Norah", "nextStep": "Norah to provide the monthly figures, or I pull them from Hootsuite", "deadline": "This week" }
+  ],
+  "notes": "Week 2026-W40. Compare vs 2026-09-22. Order: Conclusions → Data → Explanation → Risks → Quality."
 }
