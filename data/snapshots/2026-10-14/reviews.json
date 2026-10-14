@@ -170,61 +170,61 @@
     ]
   },
   "representativeReviews": {
-    "note": "3–5 per week. Each: { quote, link, language, market, store, date, sentiment, evidenceStrength }.",
+    "note": "Balanced representative sample (positive + negative), curated from App Store + Google Play reviews. Overall ratings are 4.3–4.6, so the sample leans positive with representative critical reviews (common themes: pricing, teacher origin).",
     "entries": [
       {
-        "quote": "اذا اتصلوا عليك يعطوك مدة اشتراك مافيها مصداقية عشلن بعدين تدفع زيادة.   اضافة الى ان المبلغ اللي تدفعه حق نص ساعة تعليم للحصة الوحدة.   بالاضافة انك تقدر تلاقي معاهد و تطبيقات افضل بكثييير منه",
-        "link": "https://itunes.apple.com/sa/review?id=1585144932&type=Purple%20Software",
-        "language": null,
-        "market": "KSA",
-        "store": "App Store",
-        "app": "51Talk (English)",
-        "date": "2026-10-10",
-        "sentiment": "negative",
-        "evidenceStrength": "single review"
-      },
-      {
-        "quote": "اوكي حلو الابلكيشن ومتنوع بس في الحاح وازعاج",
-        "link": "https://itunes.apple.com/kw/review?id=1585144932&type=Purple%20Software",
-        "language": null,
-        "market": "KWT",
-        "store": "App Store",
-        "app": "51Talk (English)",
-        "date": "2026-10-05",
-        "sentiment": "negative",
-        "evidenceStrength": "single review"
-      },
-      {
-        "quote": "صراحه أنا جربته وي معجبين لكن كل شخص له راي موعين",
-        "link": "https://play.google.com/store/apps/details?id=com.talk51.international&gl=sa",
-        "language": null,
-        "market": "KSA",
-        "store": "Google Play",
-        "app": "51Talk (English)",
-        "date": "2026-10-12",
-        "sentiment": "negative",
-        "evidenceStrength": "single review"
-      },
-      {
-        "quote": "يعني علم ولدي الانجليزيه واقدر اني احمل اي نوع ذكاء اصطناعي واخليه يعلمه الانجليزيه ندفع فلوس على الفاضي",
-        "link": "https://play.google.com/store/apps/details?id=com.talk51.international&gl=kw",
-        "language": null,
-        "market": "KWT",
-        "store": "Google Play",
-        "app": "51Talk (English)",
-        "date": "2026-10-12",
-        "sentiment": "negative",
-        "evidenceStrength": "single review"
-      },
-      {
-        "quote": "💙💙💙💙💙💙💙💙💙💙💙💙💙💙💙ؤؤؤؤؤ",
-        "link": "https://play.google.com/store/apps/details?id=com.talk51.international&gl=ae",
-        "language": null,
+        "quote": "أنا سعيدة جدًا بتجربتي مع برنامج 51talk، فهو يقدم تجربة تعليمية فريدة تجمع بين المتعة والفائدة لأطفالي. الأسلوب التفاعلي في الدروس يجعل الأطفال يشعرون بالحماس أثناء التعلم، مما يساهم في تطوير مهاراتهم اللغوية بثقة وطلاقة. أنصح به بكل ثقة لكل من يبحث عن تعليم راقٍ وممتع لأبنائه",
+        "link": "https://itunes.apple.com/ae/review?id=1585144932&type=Purple%20Software",
+        "language": "Arabic",
         "market": "UAE",
+        "store": "App Store",
+        "app": "51Talk (English)",
+        "date": "2025-03-19",
+        "sentiment": "positive",
+        "evidenceStrength": "single review"
+      },
+      {
+        "quote": "انا مابديت الدروس معاهم بسبب طريقة تعاملهم يقول الدرس الاول مجانا وبعدين يتصل فيك يطلب معلوماتك الشخصيه شلون اعطيك معلوماتي وانا مادري هل تعجبني طريقتك او لا انا ماعجبني التعامل وخلاني انهي الخطوه قبل لا ابدا",
+        "link": "https://itunes.apple.com/kw/review?id=1585144932&type=Purple%20Software",
+        "language": "Arabic",
+        "market": "KWT",
+        "store": "App Store",
+        "app": "51Talk (English)",
+        "date": "2026-08-05",
+        "sentiment": "negative",
+        "evidenceStrength": "single review"
+      },
+      {
+        "quote": "تجربه مره مره مره مره مره مره مره حلوه وانصح فيه ومن اول مره بنتي صارت تعرف كلمات وضح الفرق وبرضو يعطون حصه مجانيه للتجربة و يدقون عليك عشان يعلمونك مستوى بنتك او ولدك و الحصه مدتها مره حلوه اللي هو 25 دقيقه انا انصح بالتطبيق بقوه و اعطيه خمس نجوم شكرآ 51TaIK على تعليمكم للأطفال",
+        "link": "https://play.google.com/store/apps/details?id=com.talk51.international&gl=sa",
+        "language": "Arabic",
+        "market": "KSA",
         "store": "Google Play",
         "app": "51Talk (English)",
-        "date": "2026-10-11",
+        "date": "2026-05-13",
+        "sentiment": "positive",
+        "evidenceStrength": "single review"
+      },
+      {
+        "quote": "اشتركت معهم لأطفالي الاثنين لمدة 9 اشهر مالاحظت اي تطور فقط تحسنوا في تمييز الحروف والمعلمات غير متمكنات في النطق لأنهم من الجنسية الفلبينية واللي يضايق أكثر ويقهر ان الحصص عدد معين كل شهر لازم تخلصها إذا ماخلصتها راحت عليك وأنت دافع قيمتها كاملة ومو رخيصة ابداّ",
+        "link": "https://itunes.apple.com/sa/review?id=1585144932&type=Purple%20Software",
+        "language": "Arabic",
+        "market": "KSA",
+        "store": "App Store",
+        "app": "51Talk (English)",
+        "date": "2026-09-17",
         "sentiment": "negative",
+        "evidenceStrength": "single review"
+      },
+      {
+        "quote": "استفادت بنتي حيل من الدروس اللي تقدمها المنصه الحمدلله والمعلمين يحرصون يوصلون المعلومه للطالب يوصلون بطريقة سهله ومبسطه وودودين جدا مع الطالب الحمدلله تجربتي معاكم جدا ناجحه وراح اكررها كل سنه ♥️👍🏻",
+        "link": "https://itunes.apple.com/kw/review?id=1585144932&type=Purple%20Software",
+        "language": "Arabic",
+        "market": "KWT",
+        "store": "App Store",
+        "app": "51Talk (English)",
+        "date": "2025-12-22",
+        "sentiment": "positive",
         "evidenceStrength": "single review"
       }
     ]
