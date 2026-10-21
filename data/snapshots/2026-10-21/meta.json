@@ -1,0 +1,17 @@
+{
+  "captureDate": "2026-10-21",
+  "weekLabel": "2026-W43",
+  "collectionPeriod": {
+    "start": "2026-10-18",
+    "end": "2026-10-24"
+  },
+  "isBaseline": false,
+  "dataQuality": [
+    {
+      "issue": "Fresh week 2026-W43 — fill via fetch_* scripts + manual social/reviews.",
+      "impact": "Empty until collected.",
+      "status": "open",
+      "owner": "Omar"
+    }
+  ]
+}
