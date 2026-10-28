@@ -1,0 +1,232 @@
+{
+  "section": "C. User reviews & sentiment / 用户评价与舆情",
+  "note": "App Store + Google Play, per market. Report sample size + evidence strength; never escalate a single review into an overall conclusion.",
+  "status": "pending-app-ids",
+  "storeRatings": {
+    "note": "Each entry: { market, store, rating, ratingCount, prevRating, prevRatingCount, oneTwoStarShare, newReviews, spikeWindow }.",
+    "entries": [
+      {
+        "market": "KSA",
+        "store": "App Store",
+        "app": "51Talk (English)",
+        "appId": "1585144932",
+        "rating": 4.24723,
+        "ratingCount": 15079,
+        "prevRating": 4.25598,
+        "prevRatingCount": 14962,
+        "oneTwoStarShare": null,
+        "newReviews": null,
+        "spikeWindow": null
+      },
+      {
+        "market": "KWT",
+        "store": "App Store",
+        "app": "51Talk (English)",
+        "appId": "1585144932",
+        "rating": 4.10591,
+        "ratingCount": 491,
+        "prevRating": 4.11656,
+        "prevRatingCount": 489,
+        "oneTwoStarShare": null,
+        "newReviews": null,
+        "spikeWindow": null
+      },
+      {
+        "market": "UAE",
+        "store": "App Store",
+        "app": "51Talk (English)",
+        "appId": "1585144932",
+        "rating": 4.34069,
+        "ratingCount": 408,
+        "prevRating": 4.36296,
+        "prevRatingCount": 405,
+        "oneTwoStarShare": null,
+        "newReviews": null,
+        "spikeWindow": null
+      },
+      {
+        "market": "KSA",
+        "store": "App Store",
+        "app": "51Talk Adults (Arabic)",
+        "appId": "6741898680",
+        "rating": 4.58847,
+        "ratingCount": 3871,
+        "prevRating": 4.59018,
+        "prevRatingCount": 3848,
+        "oneTwoStarShare": null,
+        "newReviews": null,
+        "spikeWindow": null
+      },
+      {
+        "market": "KWT",
+        "store": "App Store",
+        "app": "51Talk Adults (Arabic)",
+        "appId": "6741898680",
+        "rating": 4.77027,
+        "ratingCount": 74,
+        "prevRating": 4.77027,
+        "prevRatingCount": 74,
+        "oneTwoStarShare": null,
+        "newReviews": null,
+        "spikeWindow": null
+      },
+      {
+        "market": "UAE",
+        "store": "App Store",
+        "app": "51Talk Adults (Arabic)",
+        "appId": "6741898680",
+        "rating": 4.65,
+        "ratingCount": 100,
+        "prevRating": 4.65,
+        "prevRatingCount": 100,
+        "oneTwoStarShare": null,
+        "newReviews": null,
+        "spikeWindow": null
+      },
+      {
+        "market": "KSA",
+        "store": "Google Play",
+        "app": "51Talk (English)",
+        "packageName": "com.talk51.international",
+        "rating": 3.58,
+        "ratingCount": 9614,
+        "ratingCountNote": "Google Play count is global",
+        "prevRating": 3.59,
+        "prevRatingCount": 9571,
+        "oneTwoStarShare": null,
+        "newReviews": null,
+        "spikeWindow": null
+      },
+      {
+        "market": "KWT",
+        "store": "Google Play",
+        "app": "51Talk (English)",
+        "packageName": "com.talk51.international",
+        "rating": 3.81,
+        "ratingCount": 9614,
+        "ratingCountNote": "Google Play count is global",
+        "prevRating": 3.82,
+        "prevRatingCount": 9571,
+        "oneTwoStarShare": null,
+        "newReviews": null,
+        "spikeWindow": null
+      },
+      {
+        "market": "UAE",
+        "store": "Google Play",
+        "app": "51Talk (English)",
+        "packageName": "com.talk51.international",
+        "rating": 4.49,
+        "ratingCount": 9614,
+        "ratingCountNote": "Google Play count is global",
+        "prevRating": 4.49,
+        "prevRatingCount": 9571,
+        "oneTwoStarShare": null,
+        "newReviews": null,
+        "spikeWindow": null
+      },
+      {
+        "market": "KSA",
+        "store": "Google Play",
+        "app": "51Talk Adults (Arabic)",
+        "packageName": "com.talk51.global.adult",
+        "rating": 4.27,
+        "ratingCount": 182,
+        "ratingCountNote": "Google Play count is global",
+        "prevRating": 4.28,
+        "prevRatingCount": 178,
+        "oneTwoStarShare": null,
+        "newReviews": null,
+        "spikeWindow": null
+      },
+      {
+        "market": "KWT",
+        "store": "Google Play",
+        "app": "51Talk Adults (Arabic)",
+        "packageName": "com.talk51.global.adult",
+        "rating": 4.25,
+        "ratingCount": 182,
+        "ratingCountNote": "Google Play count is global",
+        "prevRating": 4.25,
+        "prevRatingCount": 178,
+        "oneTwoStarShare": null,
+        "newReviews": null,
+        "spikeWindow": null
+      },
+      {
+        "market": "UAE",
+        "store": "Google Play",
+        "app": "51Talk Adults (Arabic)",
+        "packageName": "com.talk51.global.adult",
+        "rating": 5,
+        "ratingCount": 182,
+        "ratingCountNote": "Google Play count is global",
+        "prevRating": 5,
+        "prevRatingCount": 178,
+        "oneTwoStarShare": null,
+        "newReviews": null,
+        "spikeWindow": null
+      }
+    ]
+  },
+  "representativeReviews": {
+    "note": "Balanced representative sample (positive + negative) from real App Store + Google Play reviews; overall ratings 4.3–4.6.",
+    "entries": [
+      {
+        "quote": "أنا سعيدة جدًا بتجربتي مع برنامج 51talk، فهو يقدم تجربة تعليمية فريدة تجمع بين المتعة والفائدة لأطفالي. الأسلوب التفاعلي في الدروس يجعل الأطفال يشعرون بالحماس أثناء التعلم، مما يساهم في تطوير مهاراتهم اللغوية بثقة وطلاقة. أنصح به بكل ثقة لكل من يبحث عن تعليم راقٍ وممتع لأبنائه",
+        "link": "https://itunes.apple.com/ae/review?id=1585144932&type=Purple%20Software",
+        "language": "Arabic",
+        "market": "UAE",
+        "store": "App Store",
+        "app": "51Talk (English)",
+        "date": "2025-03-19",
+        "sentiment": "positive",
+        "evidenceStrength": "single review"
+      },
+      {
+        "quote": "انا مابديت الدروس معاهم بسبب طريقة تعاملهم يقول الدرس الاول مجانا وبعدين يتصل فيك يطلب معلوماتك الشخصيه شلون اعطيك معلوماتي وانا مادري هل تعجبني طريقتك او لا انا ماعجبني التعامل وخلاني انهي الخطوه قبل لا ابدا",
+        "link": "https://itunes.apple.com/kw/review?id=1585144932&type=Purple%20Software",
+        "language": "Arabic",
+        "market": "KWT",
+        "store": "App Store",
+        "app": "51Talk (English)",
+        "date": "2026-08-05",
+        "sentiment": "negative",
+        "evidenceStrength": "single review"
+      },
+      {
+        "quote": "جميل جدا. لكم جميل الشكر جزاكم الله خيرا في معلمات صبورات ومشجعات وكمان موضفين. يستفسرو بكل صبر وهدوء وفي التطبيق. حفظ الدروس والكلمات. وكل مايتعلمه الطفل في التطبيق وتعلم اللهجه الانجليزيه وفيه تكرير سماع الكلمات وألعاب محفزه",
+        "link": "https://play.google.com/store/apps/details?id=com.talk51.international&gl=sa",
+        "language": "Arabic",
+        "market": "KSA",
+        "store": "Google Play",
+        "app": "51Talk (English)",
+        "date": "2026-07-12",
+        "sentiment": "positive",
+        "evidenceStrength": "single review"
+      },
+      {
+        "quote": "التطبيق في البدايه حلوه ويتجاوبون معك بس وقفت شهرين وخصموا مني ٢٤ نقطه ليه ؟ طيب صلاحيه مكتوب تنتهي في شهر ٤ عام ٢٠٢٦ وحتى ماوصلنا لها ،وانا قفت غصب عني صراحه في ظلم احاول أتواصل معهم محد يرد علي نصيحه فكروا زين قبل ما تدفع وحتى انه مو رخيص غالي والله اني منقهره",
+        "link": "https://itunes.apple.com/sa/review?id=6741898680&type=Purple%20Software",
+        "language": "Arabic",
+        "market": "KSA",
+        "store": "App Store",
+        "app": "51Talk Adults (Arabic)",
+        "date": "2025-12-06",
+        "sentiment": "negative",
+        "evidenceStrength": "single review"
+      },
+      {
+        "quote": "استفادت بنتي حيل من الدروس اللي تقدمها المنصه الحمدلله والمعلمين يحرصون يوصلون المعلومه للطالب يوصلون بطريقة سهله ومبسطه وودودين جدا مع الطالب الحمدلله تجربتي معاكم جدا ناجحه وراح اكررها كل سنه ♥️👍🏻",
+        "link": "https://itunes.apple.com/kw/review?id=1585144932&type=Purple%20Software",
+        "language": "Arabic",
+        "market": "KWT",
+        "store": "App Store",
+        "app": "51Talk (English)",
+        "date": "2025-12-22",
+        "sentiment": "positive",
+        "evidenceStrength": "single review"
+      }
+    ]
+  }
+}
